@@ -1,0 +1,10 @@
+# written by pptpsetup
+pty "pptp 221.242.9.211 --nolaunchpppd"
+lock
+noauth
+nobsdcomp
+nodeflate
+name vpn
+remotename pptpd
+ipparam pptpd
+require-mppe-128

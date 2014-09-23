@@ -1,0 +1,3 @@
+fcitx &
+cairo-dock &
+conky &

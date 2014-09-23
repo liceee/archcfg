@@ -1,0 +1,27 @@
+mode server
+proto udp
+port 1194
+dev tap0
+keepalive 10 120
+daemon
+writepid /var/run/openvpn.pid
+comp-lzo
+max-clients 100
+user nobody
+group nogroup
+persist-key
+persist-tun
+verb 3
+mute 20
+client-to-client
+duplicate-cn
+cd /etc/openvpn
+tls-server
+tls-auth keys/ta.key 0
+cipher BF-CBC
+ca keys/ca.crt
+cert keys/routerA.crt
+key keys/routerA.key
+dh keys/dh1024.pem
+chroot chroot
+client-config-dir ccd
