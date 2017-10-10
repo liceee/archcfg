@@ -1,0 +1,122 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "aboutdiigo": {
+      "message": "About Diigo:"
+   },
+   "aboutdiigo_1": {
+      "message": "bookmark, archive and annotate webpages, "
+   },
+   "aboutdiigo_2": {
+      "message": "save notes, images and screenshots,"
+   },
+   "aboutdiigo_3": {
+      "message": "search, organize, and share your data in a variety of ways,"
+   },
+   "aboutdiigo_4": {
+      "message": "access anywhere using Diigo apps on Android, iPhone and iPad"
+   },
+   "aboutdiigo_d": {
+      "message": "Diigo is a free,  all-purpose collecting tool that enables you to"
+   },
+   "back": {
+      "message": "Back"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "clear": {
+      "message": "Clear"
+   },
+   "delete": {
+      "message": "Delete"
+   },
+   "description": {
+      "message": "The quickest way to take notes in Chrome, as quick and slick as the best desktop note-app."
+   },
+   "done": {
+      "message": "Done"
+   },
+   "googleaccount": {
+      "message": "Google account"
+   },
+   "havediigo": {
+      "message": "Already have a Diigo account?"
+   },
+   "lastsync": {
+      "message": "Last synced at "
+   },
+   "learnmore": {
+      "message": "Learn more >>"
+   },
+   "loadmore": {
+      "message": "Load more"
+   },
+   "local": {
+      "message": "en_US"
+   },
+   "networkerror": {
+      "message": "Network Error"
+   },
+   "newdiigo": {
+      "message": "New to Diigo? Connect to Diigo.com via"
+   },
+   "newnote": {
+      "message": "New Note"
+   },
+   "note": {
+      "message": " Notes"
+   },
+   "notes": {
+      "message": " Notes"
+   },
+   "password": {
+      "message": "password"
+   },
+   "recycle": {
+      "message": "Recycle"
+   },
+   "restore": {
+      "message": "Restore"
+   },
+   "saveonline": {
+      "message": "Save Online:"
+   },
+   "saveonline_d": {
+      "message": "Quick Note currently uses Diigo.com to provide cloud-based storage so your notes can be accessed from any computer or phone."
+   },
+   "search": {
+      "message": "  Search..."
+   },
+   "settings": {
+      "message": "Settings"
+   },
+   "sigining": {
+      "message": "Signing in..."
+   },
+   "signerror": {
+      "message": "Invalid Username/Email and Password combination"
+   },
+   "signin": {
+      "message": "Sign In"
+   },
+   "sonline": {
+      "message": "Save Online"
+   },
+   "stop": {
+      "message": "Stop sync"
+   },
+   "stopsync": {
+      "message": "Stop syncing with Diigo?"
+   },
+   "syncing": {
+      "message": "Syncing..."
+   },
+   "username_email": {
+      "message": "Username or Email"
+   },
+   "yes": {
+      "message": "Yes"
+   }
+}

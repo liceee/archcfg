@@ -1,0 +1,119 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "aboutdiigo": {
+      "message": "О Diigo:"
+   },
+   "aboutdiigo_1": {
+      "message": "управлять закладками браузера, архивировать и подписывать веб-страницы "
+   },
+   "aboutdiigo_2": {
+      "message": "делать заметки, сохранять изображения и скриншоты"
+   },
+   "aboutdiigo_3": {
+      "message": "искать, организовывать и распространять ваши данные разными способами,"
+   },
+   "aboutdiigo_4": {
+      "message": "в том числе, обеспечивать доступ к ним через Android, iPhone и iPad "
+   },
+   "aboutdiigo_d": {
+      "message": "Diigo - это бесплатный набор инструментов, который позволяет вам"
+   },
+   "back": {
+      "message": "Назад"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "clear": {
+      "message": "Очистить"
+   },
+   "delete": {
+      "message": "Удалить"
+   },
+   "description": {
+      "message": "Самый быстрый способ оставить заметку в Chrome, так быстро, как это делают самые лучшие приложения для заметок"
+   },
+   "done": {
+      "message": "Выполнено"
+   },
+   "googleaccount": {
+      "message": "Google account"
+   },
+   "havediigo": {
+      "message": "У вас уже есть учётная запись Diigo?"
+   },
+   "lastsync": {
+      "message": "Последняя синхронизация "
+   },
+   "learnmore": {
+      "message": "Узнать больше >>"
+   },
+   "loadmore": {
+      "message": "Load more"
+   },
+   "networkerror": {
+      "message": "Ошибка сети"
+   },
+   "newdiigo": {
+      "message": "У вас нет учётной записи Diigo? Подключитесь к Diigo через учётную запись Google"
+   },
+   "newnote": {
+      "message": "New Note"
+   },
+   "note": {
+      "message": " заметок"
+   },
+   "notes": {
+      "message": " заметок"
+   },
+   "password": {
+      "message": "Пароль"
+   },
+   "recycle": {
+      "message": "Удалить"
+   },
+   "restore": {
+      "message": "Восстановить"
+   },
+   "saveonline": {
+      "message": "Сохранить онлайн:"
+   },
+   "saveonline_d": {
+      "message": "Quick Note использует сервер  Diigo.com как облачное хранилище для ваших заметок, таким образом они доступны с любого вашего компьютера или телефона"
+   },
+   "search": {
+      "message": "  Поиск..."
+   },
+   "settings": {
+      "message": "настройка"
+   },
+   "sigining": {
+      "message": "Войти..."
+   },
+   "signerror": {
+      "message": "Неверное имя пользователя и/или пароль"
+   },
+   "signin": {
+      "message": "Войти"
+   },
+   "sonline": {
+      "message": "Сохранить онлайн"
+   },
+   "stop": {
+      "message": "Остановить синхронизацию"
+   },
+   "stopsync": {
+      "message": "Остановить синхронизацию с Diigo?"
+   },
+   "syncing": {
+      "message": "Syncing..."
+   },
+   "username_email": {
+      "message": "Имя пользователя или электронная почта"
+   },
+   "yes": {
+      "message": "Yes"
+   }
+}

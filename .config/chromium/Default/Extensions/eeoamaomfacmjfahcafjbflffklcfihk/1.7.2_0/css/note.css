@@ -1,0 +1,105 @@
+﻿html, body, #wrapper, #wrapperInner {
+    height:100%;
+}
+
+body{
+    padding-left: 10px;
+	background-color:transparent;
+}
+body.minimize {
+	overflow:hidden;
+}
+
+#wrapper{
+    background: url(../images/side-entry-bg.png) 0 0 repeat-y;
+    -webkit-box-shadow: 0 -2px 6px rgba(0, 0, 0, .5);
+}
+
+#wrapperInner{
+    background: url(../images/side-entry-top.png) 0 0 no-repeat;
+}
+
+/* action */
+#action{
+    height: 28px;
+}
+#action ul {
+    float:right;
+}
+#action ul li {
+    float:left;
+    margin:8px 5px 0 0;
+    height: 14px;
+    width: 14px;
+    background: url(../images/icons-14.png) 0 0 no-repeat;
+    cursor: pointer;
+}
+
+#action ul li#app {
+	background-position: -42px 0;
+} 
+#action ul li#app:hover {
+	background-position: -42px -14px;
+} 
+
+#action ul li#minimize{
+    background-position: -14px 0;
+}
+#action ul li#minimize:hover{
+    background-position: -14px -14px;
+}
+
+#action ul li#maximize{
+    background-position: 0 0;
+}
+#action ul li#maximize:hover{
+    background-position: 0 -14px;
+}
+
+#action ul li#close{
+    background-position: -28px 0;
+}
+#action ul li#close:hover{
+    background-position: -28px -14px;
+}
+body.maximize #maximize,
+body.minimize #minimize, 
+body.minimize #close,
+body.minimize #app {
+    display:none !important;
+}
+
+/* title */
+#title input {
+    border:none;
+    width:240px;
+    background: none;
+    margin: 5px 0 0 10px;
+    font-size: 13px;
+	font-weight:bold;
+    line-height: 24px;
+	color: #664400;
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+}
+
+/* editor */
+#editor {
+    position:fixed;
+    top:70px;
+    bottom:0;
+    left:10px;
+    background: url(../images/line-height-22.png) 0 11px repeat;
+}
+#editor>textarea{
+	display:none;
+}
+.rte-zone {
+    height:100%;
+    border:none;
+}
+.rte-zone>iframe {
+    height:100%;
+}
+.rte-toolbar, .rte-resizer {
+    display:none;
+}

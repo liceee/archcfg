@@ -1,0 +1,119 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "aboutdiigo": {
+      "message": "Diigo hakkında:"
+   },
+   "aboutdiigo_1": {
+      "message": "web sayfalarınızı sık kullanılan listelerine eklemek, arşivlemek ve dipnotlamak, "
+   },
+   "aboutdiigo_2": {
+      "message": "notlarınızı, resimlerinizi ve ekran görüntülerinizi saklamak,"
+   },
+   "aboutdiigo_3": {
+      "message": "verilerinizi çeşitli yollarla aramak, organize etmek ve paylaşmak"
+   },
+   "aboutdiigo_4": {
+      "message": "Android tabanlı cihazlar, iPhone ve iPad uygulamaları aracılığı ile heryerden erişerek kullanabileceğiniz çok amaçlı bir koleksiyon aracıdır."
+   },
+   "aboutdiigo_d": {
+      "message": "Diigo,"
+   },
+   "back": {
+      "message": "Geri"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "clear": {
+      "message": "Temizle"
+   },
+   "delete": {
+      "message": "Sil"
+   },
+   "description": {
+      "message": "Chrome'da en hızlı not almanın yolu. -En iyi masaüstü not alma uygulaması kadar hızlı ve etkin."
+   },
+   "done": {
+      "message": "Tamamlandı"
+   },
+   "googleaccount": {
+      "message": "Google account"
+   },
+   "havediigo": {
+      "message": "Halihazırda bir Diigo hesabınız mı var?"
+   },
+   "lastsync": {
+      "message": "son eşitleme saati "
+   },
+   "learnmore": {
+      "message": "Daha fazlasını öğrenin >>"
+   },
+   "loadmore": {
+      "message": "Load more"
+   },
+   "networkerror": {
+      "message": "Ağ Hatası"
+   },
+   "newdiigo": {
+      "message": "Diigo ile yeni mi tanışıyorsunuz? Diigo.com'a Google hesabınız ile bağlanın."
+   },
+   "newnote": {
+      "message": "Yeni not"
+   },
+   "note": {
+      "message": " not"
+   },
+   "notes": {
+      "message": " not"
+   },
+   "password": {
+      "message": "Parola"
+   },
+   "recycle": {
+      "message": "Geri Dönüşüm Kutusu"
+   },
+   "restore": {
+      "message": "Geri al"
+   },
+   "saveonline": {
+      "message": "Internet'e Kaydet:"
+   },
+   "saveonline_d": {
+      "message": "Quick Note, notlarınızın herhangi bir bilgisayar veya telefondan erişimini sağlamak için şu anda Diigo.com'un bulut tabanlı depolama hizmetlerini kullanmaktadır."
+   },
+   "search": {
+      "message": "  Arama..."
+   },
+   "settings": {
+      "message": "Ayarlar"
+   },
+   "sigining": {
+      "message": "Giriş Yap..."
+   },
+   "signerror": {
+      "message": "Geçersiz Kullanıcı Adı/E-Posta ve Parola kombinasyonu"
+   },
+   "signin": {
+      "message": "Giriş Yap"
+   },
+   "sonline": {
+      "message": "Internet'e Kaydet"
+   },
+   "stop": {
+      "message": "Senkronizasyonu Durdur"
+   },
+   "stopsync": {
+      "message": "Diigo ile senkronizasyon durdurulsun mu?"
+   },
+   "syncing": {
+      "message": "Syncing..."
+   },
+   "username_email": {
+      "message": "Kullanıcı adı veya E-Posta Adresi"
+   },
+   "yes": {
+      "message": "Yes"
+   }
+}

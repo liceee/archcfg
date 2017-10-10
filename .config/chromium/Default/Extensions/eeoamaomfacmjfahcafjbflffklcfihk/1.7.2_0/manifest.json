@@ -1,0 +1,36 @@
+{
+   "background": {
+      "page": "bg.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icon19.png"
+      },
+      "default_title": "Quick Note"
+   },
+   "content_scripts": [ {
+      "js": [ "js/menu.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "js/jquery-1.7.1.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://cdn.extensionanalytics.com/; object-src 'self'",
+   "default_locale": "en_US",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkQ+02zc2wBTO8b97iG8QOxDOaIsK1aRYeS8MRmNvauLS2Y/8HCjbAeK20H6xjFWgSYGIFWNYqIEWhwZM5y8lPg64kAgwfS9PSBcXfUbn27b8koiRPjMrMXc4TzhiqUwLCko+Zlkcfk+oDKBIqHOktaXLGEqemulEXYxoNvauj0v761jg1ffvlpPJ1kgn5Fmc+4dO8lrAO6jT8buA/x454GjuYStjb7jh/pSrZL4AKNoKn7vo3iwnyanXoGIyfOZiIJwMqzrOA7rWZzbMIzllI9UP12D6Pvbus4gLqYQYiBg+hnGBXwhQTnV/j2ja7h8g5Sjv1WjwwKvvy9UG75Y5LwIDAQAB",
+   "manifest_version": 2,
+   "name": "Quick Note",
+   "offline_enabled": true,
+   "permissions": [ "webRequest", "webRequestBlocking", "webNavigation", "idle", "tabs", "http://*/*", "https://*/*", "contextMenus", "unlimitedStorage", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.7.2",
+   "web_accessible_resources": [ "note.html" ]
+}

@@ -1,0 +1,28 @@
+body{
+    margin: 16px 0 0 35px;
+}
+
+/* format note */
+body img {
+	-webkit-box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 3px !important;
+	border: 5px solid white !important;
+	margin:10px !important;
+}
+/* body img.shrink {
+	max-width:188px !important;
+}
+li.note.focus>div>.desc img {
+	max-width:414px !important;
+} */
+
+body a {
+	color:#0044cc !important;
+}
+
+body input, body textarea {
+	display:none !important;
+}
+
+body a:hover {
+	cursor:pointer !important;
+}

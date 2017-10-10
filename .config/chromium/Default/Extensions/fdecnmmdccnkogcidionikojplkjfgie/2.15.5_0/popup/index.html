@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>uBlock Adblock Plus</title>
+	<meta http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link type="text/css" href="css/popup.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-ui"><div class="main-body">
+	<div class="top-ui" id="ui-top">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<div class="title">
+			<span class="title1"></span> 
+			<span class="title2">UBLOCK ADBLOCK</span>
+			<span class="title1">PLUS</span> 
+		</div>
+	</div>
+	<div class="card-ui card-big-size" id="ui-settings">
+		<div class="card-title">
+			<span data-i18n="popupSettingsFor"></span>&nbsp;<span id="sitename"></span>
+		</div>
+		<div class="card-sections top-section">
+			<div class="card-section hnSwitch" id="no-popups">
+				<img src="images/popups.png">
+				<div class="title"><span class="isOff" data-i18n="popupBlockPopups"></span><span class="isOn" data-i18n="popupAllowPopups"></span></div>
+			</div>
+			<div class="card-separator"></div>
+			<div class="card-section" id="whitelistWebsite">
+				<img src="images/whitelist.png">
+				<div class="title"><span class="isOff" data-i18n="popupWhitelistWebsite"></span><span class="isOn" data-i18n="popupResumeBlocking"></span></div>
+			</div>
+			<div class="card-separator"></div>
+			<div class="card-section" id="blockElement">
+				<img src="images/element.png">
+				<div class="title" data-i18n="popupBLockElement"></div>
+			</div>
+			<div id="blocked-elements">
+			</div>
+		</div>
+	</div>
+	<div class="card-charts card-big-size" id="ui-charts">
+		<div class="card-title text-cap" data-i18n="popupAdBlockingStats"></div>
+		<div class="card-sections" id="ui-circles">
+			<div class="card-section" id="chart-s1">
+				<div class="chart-title" data-i18n="popupAdsBlocked"></div>
+				<div class="chart-title" data-i18n="popupAllTime"></div>				
+			</div>
+			<div class="card-section" id="chart-s2">
+				<div class="chart-title" data-i18n="popupAdsBlocked"></div>
+				<div class="chart-title" data-i18n="popupOnThisPage"></div>								
+			</div>
+			<div class="card-section" id="chart-s3">
+				<div class="chart-title" data-i18n="popupCurrently"></div>
+				<div class="chart-title" data-i18n="popupConnectedDomains"></div>								
+			</div>
+		</div>
+	</div>
+	<div class="card-ui card-small-size" id="ui-feedback">
+		<div class="card-sections">
+			<div id="rate-chasing-cont">
+				<div id="rate-chasing">
+					<a href="https://chrome.google.com/webstore/detail/adblocker-for-chrome/plfaghhgijkjlofjhpfcjnamkcjoehjo/reviews" target="_blank">	
+						
+					<span id="like-us" data-i18n="popupShowUsSomeLove"></span>	
+					<span id="like-rate">
+							<span class="stars">
+							<img src="images/rate-gray.png" />
+							<img src="images/rate-gray.png" />
+							<img src="images/rate-gray.png" />
+							<img src="images/rate-gray.png" />
+							<img src="images/rate-gray.png" />
+							</span>
+					</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-sections settings" id="ui-bottom">
+		<div class="card-section" id="home-button">
+			<img src="images/home.png">
+			<div class="title">Home</div>
+		</div>
+		<div class="card-section" id="filters-button">
+			<img src="images/protection.png">
+			<div class="title" data-i18n="1pPageName">&nbsp;</div>
+		</div>
+		<div class="card-section" id="settings-button">
+			<img src="images/settings.png">
+			<div class="title" data-i18n="settingsPageName">&nbsp;</div>
+		</div>
+	</div>
+	<div class="card-charts" id="contactForm">
+		<div class="card-title text-cap"></div>
+		<input type="text" class="box inputbox" id="contact_email">
+		<textarea class="box textarea" id="contact_msg"></textarea>
+		<div class="card-sections settings">
+		<div class="card-section cancel">
+			<img src="images/back.png">
+			<div class="title">Cancel</div>
+		</div>
+		<div class="card-section send">
+			<img src="images/send.png">
+			<div class="title">Send</div>
+		</div>
+	</div>
+	</div>
+</div></div>
+<div class="tooltipContainer" style="display: none">
+        <div id="firewallContainer" class="minimized">
+            <div><span data-i18n="popupAnyRulePrompt"></span><span data-src="/" data-des="*" data-type="*" data-i18n-tip="popupTipGlobalRules" data-tip-position="under"> </span><span data-src="." data-des="*" data-type="*" data-i18n-tip="popupTipLocalRules" data-tip-position="under"> </span></div>
+            <div><span data-i18n="popupImageRulePrompt"></span><span data-src="/" data-des="*" data-type="image"> </span><span data-src="." data-des="*" data-type="image"> </span></div>
+            <div><span data-i18n="popup3pAnyRulePrompt"></span><span data-src="/" data-des="*" data-type="3p"> </span><span data-src="." data-des="*" data-type="3p"> </span></div>
+            <div><span data-i18n="popupInlineScriptRulePrompt"></span><span data-src="/" data-des="*" data-type="inline-script"> </span><span data-src="." data-des="*" data-type="inline-script"> </span></div>
+            <div><span data-i18n="popup1pScriptRulePrompt"></span><span data-src="/" data-des="*" data-type="1p-script"> </span><span data-src="." data-des="*" data-type="1p-script"> </span></div>
+            <div><span data-i18n="popup3pScriptRulePrompt"></span><span data-src="/" data-des="*" data-type="3p-script"> </span><span data-src="." data-des="*" data-type="3p-script"> </span></div>
+            <div><span data-i18n="popup3pFrameRulePrompt"></span><span data-src="/" data-des="*" data-type="3p-frame"> </span><span data-src="." data-des="*" data-type="3p-frame"> </span></div>
+        </div><div id="rulesetTools"><span id="saveRules" class="fa" data-i18n-tip="popupTipSaveRules" data-tip-position="under">&#xf023;</span><span id="revertRules" class="fa" data-i18n-tip="popupTipRevertRules" data-tip-position="under">&#xf12d;</span></div>
+    </div>
+</div>
+
+<div id="templates" style="display: none">
+    <div><span></span><span data-src="/" data-des="" data-type="*"></span><span data-src="." data-des="" data-type="*"></span><span data-src="." data-des="" data-type="*"></span></div>
+    <div id="actionSelector"><span id="dynaAllow"></span><span id="dynaNoop"></span><span id="dynaBlock"></span></div>
+    <div id="hotspotTip"></div>
+    <div id="tooltip"></div>
+</div>
+
+<script src="../lib/punycode.js"></script>
+<script src="../js/vapi-common.js"></script>
+<script src="../js/vapi-client.js"></script>
+<script src="../js/udom.js"></script>
+<script src="../js/i18n.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/circliful.js"></script>
+<script src="js/popup.js"></script>
+
+</body>
+</html>

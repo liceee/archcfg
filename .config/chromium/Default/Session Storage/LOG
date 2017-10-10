@@ -1,0 +1,15 @@
+2017/10/10-01:43:13.216 31397 Reusing MANIFEST /home/lee/.config/chromium/Default/Session Storage/MANIFEST-000001
+2017/10/10-01:43:13.216 31397 Recovering log #545
+2017/10/10-01:43:13.216 31397 Reusing old log /home/lee/.config/chromium/Default/Session Storage/000545.log 
+2017/10/10-04:33:43.880 29045 Level-0 table #549: started
+2017/10/10-04:33:43.883 29045 Level-0 table #549: 8782 bytes OK
+2017/10/10-04:33:43.888 29045 Delete type=0 #545
+2017/10/10-04:33:43.888 29045 Compacting 4@0 + 1@1 files
+2017/10/10-04:33:43.894 29045 Generated table #550@0: 1512 keys, 55485 bytes
+2017/10/10-04:33:43.894 29045 Compacted 4@0 + 1@1 files => 55485 bytes
+2017/10/10-04:33:43.896 29045 compacted to: files[ 0 1 1 0 0 0 0 ]
+2017/10/10-04:33:43.896 29045 Delete type=2 #540
+2017/10/10-04:33:43.896 29045 Delete type=2 #546
+2017/10/10-04:33:43.896 29045 Delete type=2 #542
+2017/10/10-04:33:43.896 29045 Delete type=2 #549
+2017/10/10-04:33:43.896 29045 Delete type=2 #544

@@ -1,0 +1,24 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://account.spacetimestudios.com/arcanelegends"
+      },
+      "urls": [ "http://account.spacetimestudios.com/arcanelegends" ]
+   },
+   "description": "Adventure unleashed! Explore the magical world of Arcane Legends with companions on desktop and mobile for FREE!",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqj8YuShMw9nExoZ2nVcyUUSL3r593aUZt7bVW5c4v92wJpTWOH/o8g3/WIk0nVce5io8ry8F833VQJHiV6CFy0mgXyn15IjRS5cKtFOq0UmZIrnuTs66EBfggZZnWW6sU5VxfvGnNTTQlc1GWSw0+m6vB/QKJP349x/a2LKLivwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "44",
+   "name": "Arcane Legends",
+   "permissions": [ "unlimitedStorage" ],
+   "requirements": {
+      "3D": {
+         "features": [ "css3d", "webgl" ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.5.3"
+}

@@ -1,0 +1,28 @@
+#note_diigo,
+#note_diigo.diigo_note_app_maximize {
+	z-index:10001 !important;
+	position:fixed !important;
+	top:0 !important; right:0 !important; bottom:0 !important;
+	width:270px !important;
+	-webkit-transition: width 0.1s ease-in !important;
+}
+#note_diigo {
+	margin:0 !important;
+	padding:0 !important;
+}
+#note_diigo.diigo_note_app_minimize {
+	width:35px !important;
+	-webkit-transition: width 0.1s ease-out !important;
+}
+#note_diigo.diigo_note_app_close {
+	width:0 !important;
+	-webkit-transition: width 0.1s ease-out !important;
+}
+#note_handler_diigo {
+	position:absolute !important;
+	top:0 !important; bottom:0 !important; left:-10px !important;
+	width:10px !important;
+}
+iframe#note_wrap_diigo {
+	width:100% !important; height:100% !important;
+}

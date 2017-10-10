@@ -1,0 +1,119 @@
+{
+   "OK": {
+      "message": "OK"
+   },
+   "aboutdiigo": {
+      "message": "A proposito di Diigo:"
+   },
+   "aboutdiigo_1": {
+      "message": "Aggiungere ai preferiti, archiviare e annotare pagine web "
+   },
+   "aboutdiigo_2": {
+      "message": "salvare appunti, immagini e istantanee dello schermo"
+   },
+   "aboutdiigo_3": {
+      "message": "cercare, organizzare e condividere i tuoi dati in molti modi,"
+   },
+   "aboutdiigo_4": {
+      "message": "accedere ovunque usando le applicazioni Diigo da Android, iPhone e iPad"
+   },
+   "aboutdiigo_d": {
+      "message": "Diigo è gratuito, è uno strumento per tutti gli scopi che ti permette di"
+   },
+   "back": {
+      "message": "Indietro"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "clear": {
+      "message": "Pulisci"
+   },
+   "delete": {
+      "message": "Cancella"
+   },
+   "description": {
+      "message": "Il modo più rapido per prendere nota con chrome, Veloce e facile come la miglior applicazione per prendere nota per desktop"
+   },
+   "done": {
+      "message": "Fatto"
+   },
+   "googleaccount": {
+      "message": "Google account"
+   },
+   "havediigo": {
+      "message": "Hai già un account Diigo?"
+   },
+   "lastsync": {
+      "message": "Ultima sincronizzazione "
+   },
+   "learnmore": {
+      "message": "Approfondisci >>"
+   },
+   "loadmore": {
+      "message": "Load more"
+   },
+   "networkerror": {
+      "message": "Errore di rete"
+   },
+   "newdiigo": {
+      "message": "Nuovo a Diigo? Connettiti a Diigo.com via account di "
+   },
+   "newnote": {
+      "message": "Nuova nota"
+   },
+   "note": {
+      "message": " Nota"
+   },
+   "notes": {
+      "message": " Note"
+   },
+   "password": {
+      "message": "password"
+   },
+   "recycle": {
+      "message": "Recupera"
+   },
+   "restore": {
+      "message": "Ripristina"
+   },
+   "saveonline": {
+      "message": "Salva online:"
+   },
+   "saveonline_d": {
+      "message": "\"Quick Note\" attualmente utilizza Diigo.com per fornire lo spazio necessario per accedere alle note da qualsiasi computer o telefono."
+   },
+   "search": {
+      "message": "  Cerca..."
+   },
+   "settings": {
+      "message": "Impostazioni"
+   },
+   "sigining": {
+      "message": "Accedi..."
+   },
+   "signerror": {
+      "message": "Combinazione nome utente e password errata"
+   },
+   "signin": {
+      "message": "Accedi"
+   },
+   "sonline": {
+      "message": "Salva online"
+   },
+   "stop": {
+      "message": "Ferma la sincronizzazione"
+   },
+   "stopsync": {
+      "message": "Ferma la sincronizzazione con Digo ?"
+   },
+   "syncing": {
+      "message": "Syncing..."
+   },
+   "username_email": {
+      "message": "Nome Utente o Email"
+   },
+   "yes": {
+      "message": "Yes"
+   }
+}

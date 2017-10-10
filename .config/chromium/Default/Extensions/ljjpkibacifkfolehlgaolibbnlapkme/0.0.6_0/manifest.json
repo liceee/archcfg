@@ -1,0 +1,24 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "js/cookie.js" ],
+      "matches": [ "https://qiandao.today/*", "http://qiandao.zhaoting.li/" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "images/logo128.png",
+      "16": "images/logo16.png",
+      "32": "images/logo32.png",
+      "48": "images/logo48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuY47t4GuT3n7a5C3smCQzTCueAKgd1hoALTFmxLdxJHg0i+RKGCIe4xv9VKPA5QkFfMBvL0Fcnj3eM+0BW8MYAov/k6aqD2XLuRa/PRkGJGZZcV1pZJyaSj8Y2DjF5NqpS61OM3M5iNCUzp7t7sOk8bQLgdHzhdTlwsQDDZEdL+HHk+BIcKWe4DXB7bv5UsQ+SL2tFhBoBHpK2Rn6VIoUnBDV2dThGVSbr/zn7jn4G0FkfHU5pY2qbUo/Jr9Sd6P9qe2+omR+Gap8hLN/vKos/gpUh6ERre1G9sJNWqvq2DaluVZ+7P1eICT5RD5r6mAbhTq4ix2Iy1M6ItCV9bBOwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "permissions": [ "cookies", "tabs", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.6"
+}

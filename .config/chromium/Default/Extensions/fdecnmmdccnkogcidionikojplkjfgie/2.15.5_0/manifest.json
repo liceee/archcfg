@@ -1,0 +1,47 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "img/browsericons/icon19.png",
+         "38": "img/browsericons/icon38.png"
+      },
+      "default_popup": "popup/index.html",
+      "default_title": "uBlock AdBlock Plus"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/vapi-client.js", "js/contentscript.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "js/scriptlets/subscriber.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extShortDesc__",
+   "icons": {
+      "128": "img/icon_128.png",
+      "16": "img/icon_16.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA60OVKJYdfOmTCP25iVnyZwbtxik3lXsQoW8MeizJGQA9EueTqUxcLB/eAuFslMVr4KcpU4jNFmcQLeUNR9nJ+f625XKgLlaSmr7JRSMtv8YEly4lI7egl6KFKPijWNVID3sv7ZZvNvsmZKOGpIZEA9nt3eDTX94xozsqGDsmw+hZ5PSu1jMZx5beuMANy1zq8Gv8U/eZu2BBBRvhD+R7I4FbmPh8bVdWdTcutoxn5SrHdd0+/w/prVH2NMMELkQ6abB4PPG/mmRM9bVynaIbbrwBJfnWt0N/iBOCgYIVx83ajI5Aj4+CjVSOTregHk3MlR1OdRia2nK5GyLtPdAFLQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "26.0",
+   "name": "uBlock Adblock Plus",
+   "optional_permissions": [ "file:///*" ],
+   "options_page": "dashboard.html",
+   "options_ui": {
+      "page": "options_ui.html"
+   },
+   "permissions": [ "contextMenus", "privacy", "storage", "tabs", "unlimitedStorage", "webNavigation", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*" ],
+   "short_name": "uBlockABP",
+   "storage": {
+      "managed_schema": "managed_storage.json"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.15.5"
+}

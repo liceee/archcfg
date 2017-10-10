@@ -1,0 +1,122 @@
+{
+   "OK": {
+      "message": "确定"
+   },
+   "aboutdiigo": {
+      "message": "关于Diigo:"
+   },
+   "aboutdiigo_1": {
+      "message": ""
+   },
+   "aboutdiigo_2": {
+      "message": ","
+   },
+   "aboutdiigo_3": {
+      "message": ""
+   },
+   "aboutdiigo_4": {
+      "message": ""
+   },
+   "aboutdiigo_d": {
+      "message": "Diigo 帮助用户从计算机，手机，浏览器里面收集各种重要信息，并通过多种途径访问他们。"
+   },
+   "back": {
+      "message": "返回"
+   },
+   "cancel": {
+      "message": "取消"
+   },
+   "clear": {
+      "message": "清空"
+   },
+   "delete": {
+      "message": "删除"
+   },
+   "description": {
+      "message": "Chrome里最简易快捷的笔记应用软件，快捷流畅的体验媲美桌面笔记应用。"
+   },
+   "done": {
+      "message": "完成"
+   },
+   "googleaccount": {
+      "message": "Google account"
+   },
+   "havediigo": {
+      "message": "已经拥有Diigo账号?"
+   },
+   "lastsync": {
+      "message": "上次同步： "
+   },
+   "learnmore": {
+      "message": "了解更多 >>"
+   },
+   "loadmore": {
+      "message": "加载更多"
+   },
+   "local": {
+      "message": "zh_CN"
+   },
+   "networkerror": {
+      "message": "网络错误"
+   },
+   "newdiigo": {
+      "message": "没有Diigo账号？连接到Diigo.com通过"
+   },
+   "newnote": {
+      "message": "新笔记"
+   },
+   "note": {
+      "message": " 条笔记"
+   },
+   "notes": {
+      "message": " 条笔记"
+   },
+   "password": {
+      "message": "密码"
+   },
+   "recycle": {
+      "message": "回收站"
+   },
+   "restore": {
+      "message": "还原"
+   },
+   "saveonline": {
+      "message": "在线保存:"
+   },
+   "saveonline_d": {
+      "message": "Quick Note目前使用Diigo.com提供的云储存服务，你可以从任何一台电脑或智能手机访问你的笔记"
+   },
+   "search": {
+      "message": "  搜索..."
+   },
+   "settings": {
+      "message": "设置"
+   },
+   "sigining": {
+      "message": "正在登陆..."
+   },
+   "signerror": {
+      "message": "用户名或密码错误"
+   },
+   "signin": {
+      "message": "登陆"
+   },
+   "sonline": {
+      "message": "保存至网络"
+   },
+   "stop": {
+      "message": "停止同步"
+   },
+   "stopsync": {
+      "message": "和Diigo停止同步?"
+   },
+   "syncing": {
+      "message": "正在同步..."
+   },
+   "username_email": {
+      "message": "用户名/电子邮件地址"
+   },
+   "yes": {
+      "message": "确定"
+   }
+}

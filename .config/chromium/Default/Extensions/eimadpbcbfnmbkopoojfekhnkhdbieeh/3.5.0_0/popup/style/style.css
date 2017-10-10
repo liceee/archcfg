@@ -1,0 +1,1361 @@
+/*--------
+    BUTTON
+----------*/
+.Button {
+  background-color: #00222b;
+  border: none;
+  box-sizing: border-box;
+  cursor: default;
+  display: flex;
+  flex: none;
+  font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'Ubuntu', sans-serif;
+  font-size: 1em;
+  min-height: 2em;
+  min-width: 2em;
+  outline: none;
+  padding: 0.5em 0.375em;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.Button:hover:not(.disabled) {
+  background-color: #113a49;
+}
+.Button:active:not(.disabled) {
+  background-color: #216778;
+}
+.Button .wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex: none;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+}
+.Button .wrapper > span {
+  flex: none;
+  margin: 0 0.125em;
+  pointer-events: none;
+}
+.Button .wrapper > span.hidden {
+  display: none;
+}
+.Button .icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.Button .text {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1em;
+}
+.Button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/*-----------
+    CHECKBOX
+-------------*/
+.CheckBox {
+  align-items: center;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-flex;
+  flex: none;
+  flex-flow: row nowrap;
+  font-size: 1em;
+  justify-content: flex-start;
+  line-height: 1em;
+  min-height: 2em;
+  min-width: 2em;
+  padding: 0 /* 0.5em*/;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.CheckBox > input[type=checkbox] {
+  display: none;
+}
+.CheckBox > input[type=checkbox]:checked + .check:before {
+  background-color: #37abc8;
+  content: "";
+  display: inline-block;
+  height: 0.25em;
+  left: 0.125em;
+  position: absolute;
+  top: 0.5em;
+  transform: skewY(45deg);
+  width: 0.25em;
+}
+.CheckBox > input[type=checkbox]:checked + .check:after {
+  background-color: #37abc8;
+  content: "";
+  display: inline-block;
+  height: 0.25em;
+  position: absolute;
+  top: 0.375em;
+  transform: skewY(-45deg);
+  width: 0.5em;
+  left: 0.375em;
+}
+.CheckBox .check {
+  background-color: #00222b;
+  display: inline-block;
+  flex: none;
+  font-size: 1em;
+  height: 1em;
+  margin: 0.5em 0;
+  position: relative;
+  width: 1em;
+}
+.CheckBox:hover:not(.disabled) .check {
+  background-color: #113a49;
+}
+.CheckBox .text {
+  color: #ffffff;
+  display: inline-block;
+  flex: none;
+  font-size: 1em;
+  line-height: 1em;
+  margin-left: 0.25em;
+  pointer-events: none;
+}
+.CheckBox.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/*---------------
+    CONTEXT MENU
+-----------------*/
+.ContextMenu {
+  background-color: #00222b;
+  margin: 0 !important;
+  min-width: 12em;
+  position: absolute;
+}
+.ContextMenuItem {
+  background-color: #00222b;
+  border: none;
+  box-sizing: border-box;
+  cursor: default;
+  display: flex;
+  flex: none;
+  font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'Ubuntu', sans-serif;
+  font-size: 1em;
+  min-height: 2em;
+  min-width: 2em;
+  outline: none;
+  padding: 0.5em 0.375em;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ContextMenuItem:hover:not(.disabled) {
+  background-color: #113a49;
+}
+.ContextMenuItem:active:not(.disabled) {
+  background-color: #216778;
+}
+.ContextMenuItem .wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex: none;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.ContextMenuItem .icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.ContextMenuItem .text {
+  color: #ffffff;
+  flex: 1 0 auto;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1em;
+}
+.ContextMenuItem .key {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1em;
+  opacity: 0.5;
+}
+.ContextMenuItem span {
+  flex: none;
+  margin: 0 0.125em;
+  pointer-events: none;
+}
+.ContextMenuItem span.hidden {
+  display: none;
+}
+.ContextMenuItem.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/*-------
+    HBOX
+---------*/
+.HBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex: none;
+}
+.HBox > .flex-None {
+  flex: none;
+}
+.HBox > .flex-Stretch {
+  flex: 1 1 auto;
+}
+.HBox > .flex-Grow {
+  flex: 1 0 auto;
+}
+.HBox > .flex-Shrink {
+  flex: 0 1 auto;
+}
+.HBox.contentAlign-Left {
+  justify-content: flex-start;
+}
+.HBox.contentAlign-Center {
+  justify-content: center;
+}
+.HBox.contentAlign-Right {
+  justify-content: flex-end;
+}
+.HBox.itemsAlign-Top {
+  align-items: flex-start;
+}
+.HBox.itemsAlign-Middle {
+  align-items: center;
+}
+.HBox.itemsAlign-Bottom {
+  align-items: flex-end;
+}
+.HBox.itemsAlign-Stretch {
+  align-items: stretch;
+}
+.HBox.itemsIndent-05 > :not(.hidden) ~ :not(.hidden) {
+  margin-left: 0.5em;
+}
+.HBox.itemsIndent-1 > :not(.hidden) ~ :not(.hidden) {
+  margin-left: 1em;
+}
+.HBox.itemsIndent-2 > :not(.hidden) ~ :not(.hidden) {
+  margin-left: 2em;
+}
+.HBox.itemsIndent-4 > :not(.hidden) ~ :not(.hidden) {
+  margin-left: 4em;
+}
+.HBox.scrollBar-None {
+  overflow: hidden;
+}
+.HBox.scrollBar-Horizontal {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.HBox.scrollBar-Vertical {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.HBox.scrollBar-Both {
+  overflow: auto;
+}
+.HBox.wrapping-NoWrap {
+  flex-wrap: nowrap;
+}
+.HBox.wrapping-Wrap {
+  flex-wrap: wrap;
+}
+.HBox.disabled {
+  pointer-events: none;
+}
+.HBox.disabled > *:not(.disabled):not(.HBox):not(.VBox) {
+  opacity: 0.5;
+}
+/*--------
+    LABEL
+----------*/
+.Label {
+  align-items: center;
+  color: #ffffff;
+  cursor: default;
+  display: inline-flex;
+  flex: none;
+  font-size: 1em;
+  justify-content: center;
+  line-height: 1em;
+  min-height: 2em;
+  padding: 0 /* 0.5em*/;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.Label.title {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+.Label.message {
+  line-height: normal;
+  white-space: pre-wrap;
+}
+/*--------
+    MODAL
+----------*/
+.ModalTint {
+  align-items: center;
+  background-color: rgba(0, 34, 43, 0.7);
+  flex-flow: column nowrap;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.Modal {
+  background-color: #00222b;
+  flex: none;
+}
+/*--------------
+    PLACEHOLDER
+----------------*/
+.Placeholder {
+  cursor: default;
+  display: inline-block;
+  flex: 1 1 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.VBox > .Placeholder {
+  height: 100%;
+}
+.HBox > .Placeholder {
+  width: 100%;
+}
+/*--------------
+    RADIOBUTTON
+----------------*/
+.RadioButton {
+  align-items: center;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-flex;
+  flex: none;
+  flex-flow: row nowrap;
+  font-size: 1em;
+  justify-content: flex-start;
+  line-height: 1em;
+  min-height: 2em;
+  min-width: 2em;
+  padding: 0 /* 0.5em*/;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.RadioButton input[type=radio] {
+  display: none;
+}
+.RadioButton input[type=radio]:checked + .check:before {
+  background-color: #37abc8;
+  border-radius: 0.3125em;
+  content: "";
+  display: inline-block;
+  height: 0.625em;
+  left: 0.1875em;
+  position: absolute;
+  top: 0.1875em;
+  width: 0.625em;
+}
+.RadioButton .check {
+  background-color: #00222b;
+  border-radius: 0.5em;
+  display: inline-block;
+  flex: none;
+  font-size: 1em;
+  height: 1em;
+  margin: 0.5em 0;
+  position: relative;
+  width: 1em;
+}
+.RadioButton:hover:not(.disabled) .check {
+  background-color: #113a49;
+}
+.RadioButton .text {
+  color: #ffffff;
+  display: inline-block;
+  flex: none;
+  font-size: 1em;
+  line-height: 1em;
+  margin-left: 0.25em;
+  pointer-events: none;
+}
+.RadioButton.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/*--------------
+    SCROLL BARS
+----------------*/
+.VBox,
+.HBox,
+.TextArea {
+  scrollbar-arrow-color: #216778;
+  scrollbar-track-color: #00222b;
+  scrollbar-base-color: #113a49;
+  scrollbar-3dlight-color: #113a49;
+  scrollbar-highlight-color: #113a49;
+  scrollbar-face-color: #113a49;
+  scrollbar-shadow-color: #113a49;
+  scrollbar-darkshadow-color: #113a49;
+}
+.VBox::-webkit-scrollbar,
+.HBox::-webkit-scrollbar,
+.TextArea::-webkit-scrollbar {
+  background-color: transparent;
+  height: 1.5em;
+  width: 1.5em;
+}
+.VBox::-webkit-scrollbar-thumb,
+.HBox::-webkit-scrollbar-thumb,
+.TextArea::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: #00222b;
+}
+.VBox::-webkit-scrollbar-thumb:hover,
+.HBox::-webkit-scrollbar-thumb:hover,
+.TextArea::-webkit-scrollbar-thumb:hover {
+  background-color: #113a49;
+}
+.VBox::-webkit-scrollbar-thumb:active,
+.HBox::-webkit-scrollbar-thumb:active,
+.TextArea::-webkit-scrollbar-thumb:active {
+  background-color: #216778;
+}
+.VBox::-webkit-scrollbar-thumb:horizontal,
+.HBox::-webkit-scrollbar-thumb:horizontal,
+.TextArea::-webkit-scrollbar-thumb:horizontal {
+  border-top: 0.5em solid transparent;
+}
+.VBox::-webkit-scrollbar-thumb:vertical,
+.HBox::-webkit-scrollbar-thumb:vertical,
+.TextArea::-webkit-scrollbar-thumb:vertical {
+  border-left: 0.5em solid transparent;
+}
+.VBox::-webkit-scrollbar-corner,
+.HBox::-webkit-scrollbar-corner,
+.TextArea::-webkit-scrollbar-corner {
+  background-color: #00222b;
+}
+/*-----------
+    TEXT BOX (and Text Area)
+-------------*/
+.TextBox {
+  background-color: #00222b;
+  border: none;
+  box-sizing: border-box;
+  color: #37abc8;
+  flex: 1 1 auto;
+  font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'Ubuntu', sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  min-height: 2em;
+  min-width: 2em;
+  outline: none;
+  overflow: hidden;
+  padding: 0 0 0 0.25em;
+  width: 100%;
+}
+.TextBox:hover:not(.disabled) {
+  background-color: #113a49;
+}
+.TextBox:focus:not(.disabled) {
+  background-color: #113a49;
+  color: #ffffff;
+  outline: none;
+}
+.TextBox[readonly] {
+  cursor: default;
+}
+.TextBox.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.TextBox::-webkit-inner-spin-button {
+  -webkit-filter: invert(100%);
+}
+.TextArea {
+  line-height: normal;
+  overflow: auto;
+  padding: 0.25em;
+  resize: none;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #216778;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #216778;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #216778;
+}
+/*----------------
+    TOGGLE BUTTON
+------------------*/
+.ToggleButton {
+  align-items: center;
+  background-color: #00222b;
+  border: none;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  flex: none;
+  font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'Ubuntu', sans-serif;
+  font-size: 1em;
+  justify-content: center;
+  min-height: 2em;
+  min-width: 2em;
+  outline: none;
+  padding: 0 0.375em;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ToggleButton input[type=radio] {
+  display: none;
+}
+.ToggleButton:hover:not(.disabled):not(.checked) {
+  background-color: #113a49;
+}
+.ToggleButton:active:not(.disabled),
+.ToggleButton.checked {
+  background-color: #216778;
+}
+.ToggleButton .icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+.ToggleButton .text {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1em;
+}
+.ToggleButton span {
+  flex: none;
+  margin: 0 0.125em;
+  pointer-events: none;
+}
+.ToggleButton span.hidden {
+  display: none;
+}
+.ToggleButton.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+/*-------
+    VBOX
+---------*/
+.VBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+}
+.VBox > .flex-None {
+  flex: none;
+}
+.VBox > .flex-Stretch {
+  flex: 1 1 auto;
+}
+.VBox > .flex-Grow {
+  flex: 1 0 auto;
+}
+.VBox > .flex-Shrink {
+  flex: 0 1 auto;
+}
+.VBox.contentAlign-Top {
+  justify-content: flex-start;
+}
+.VBox.contentAlign-Middle {
+  justify-content: center;
+}
+.VBox.contentAlign-Bottom {
+  justify-content: flex-end;
+}
+.VBox.itemsAlign-Left {
+  align-items: flex-start;
+}
+.VBox.itemsAlign-Center {
+  align-items: center;
+}
+.VBox.itemsAlign-Right {
+  align-items: flex-end;
+}
+.VBox.itemsAlign-Stretch {
+  align-items: stretch;
+}
+.VBox.itemsIndent-05 > :not(.hidden) ~ :not(.hidden) {
+  margin-top: 0.5em;
+}
+.VBox.itemsIndent-1 > :not(.hidden) ~ :not(.hidden) {
+  margin-top: 1em;
+}
+.VBox.itemsIndent-2 > :not(.hidden) ~ :not(.hidden) {
+  margin-top: 2em;
+}
+.VBox.itemsIndent-4 > :not(.hidden) ~ :not(.hidden) {
+  margin-top: 4em;
+}
+.VBox.scrollBar-None {
+  overflow: hidden;
+}
+.VBox.scrollBar-Horizontal {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.VBox.scrollBar-Vertical {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.VBox.scrollBar-Both {
+  overflow: auto;
+}
+.VBox.wrapping-NoWrap {
+  flex-wrap: nowrap;
+}
+.VBox.wrapping-Wrap {
+  flex-wrap: wrap;
+}
+.VBox.disabled {
+  pointer-events: none;
+}
+.VBox.disabled > *:not(.disabled):not(.HBox):not(.VBox) {
+  opacity: 0.5;
+}
+/*---------
+    WINDOW
+-----------*/
+.Window {
+  background-color: #00222b;
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'Ubuntu', sans-serif;
+  margin: 0;
+  min-height: 100%;
+  min-width: -moz-min-content;
+  min-width: -webkit-min-content;
+  padding: 0;
+}
+html {
+  background-color: #00222b;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  .Window {
+    height: 100%;
+  }
+}
+.hidden {
+  display: none;
+}
+/*.visibility-Hidden {
+    visibility: hidden;
+}
+
+.visibility-Collapsed {
+    display: none;
+}*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../font/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*---------------
+    Dev tools
+-----------------*/
+.DevTools {
+  background: #00222b;
+  bottom: -12.5em;
+  height: 10em;
+  margin-bottom: 1.5em;
+  overflow: visible !important;
+  position: absolute;
+  transition: bottom 250ms, height 250ms;
+  width: 20em;
+  z-index: 3;
+}
+.DevTools.open {
+  bottom: 0;
+  height: 37em;
+}
+.DevTools .devToolsTitle {
+  font-size: 1.2em;
+}
+.DevTools .devToolsCloseButton {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.DevTools .description:first-child {
+  text-transform: uppercase;
+}
+.DevTools .inversionFixEditor .TextArea {
+  font-family: monospace;
+  margin-bottom: 0.625em;
+  white-space: pre;
+}
+.DevTools .inversionFixEditor .Button {
+  border: 0.1875em solid #216778;
+  cursor: pointer;
+  width: 100%;
+}
+.DevTools .inversionFixEditor .Button:not(:first-child) {
+  margin-left: 0.625em;
+}
+.DevTools .inversionFixEditor .inversionFixErrorText {
+  color: #db4245;
+  user-select: initial;
+}
+.DevTools .inversionFixEditor .inversionFixErrorText:empty {
+  display: none;
+}
+.DevTools a {
+  color: #37abc8;
+}
+/*----------------
+    Font select
+------------------*/
+.fontSelectContainer {
+  overflow: visible;
+  position: relative;
+}
+.FontSelect {
+  border: 0.1875em solid #216778;
+  left: 3em;
+  margin: 0 !important;
+  overflow: hidden !important;
+  position: absolute;
+  top: 0;
+  width: 17em;
+  z-index: 3;
+}
+.FontSelect .fontSelectLine .TextBox.fontSelectTextBox {
+  border: none;
+}
+.FontSelect .fontSelectLine .TextBox.fontSelectTextBox:not(:first-child) {
+  border-top: 0.09375em solid #216778;
+}
+.FontSelect .fontSelectLine .Button.fontSelectTick {
+  border: none;
+}
+.FontSelect .fontSelectLine .Button.fontSelectTick .icon.down {
+  position: relative;
+}
+.FontSelect .fontSelectLine .Button.fontSelectTick .icon.down::before,
+.FontSelect .fontSelectLine .Button.fontSelectTick .icon.down::after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 0.25em;
+  position: absolute;
+  top: 0.875em;
+  width: 0.75em;
+}
+.FontSelect .fontSelectLine .Button.fontSelectTick .icon.down::before {
+  left: 0.25em;
+  transform: skewY(45deg);
+}
+.FontSelect .fontSelectLine .Button.fontSelectTick .icon.down::after {
+  left: 1em;
+  transform: skewY(-45deg);
+}
+.FontSelect .fontSelectLine::after {
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.FontSelect .fontList {
+  background-color: #00222b;
+  max-height: 16em;
+  transition: max-height 500ms;
+}
+.FontSelect .fontList.collapsed {
+  max-height: 0;
+  transition: max-height 125ms;
+}
+.FontSelect .fontList .fontItem {
+  background-color: #00222b;
+  color: #37abc8;
+  cursor: pointer;
+  justify-content: flex-start;
+  padding: 0 0.625em;
+}
+.FontSelect .fontList .fontItem:hover {
+  background-color: #113a49;
+}
+.FontSelect .fontList .fontItem:active {
+  background-color: #216778;
+  color: #ffffff;
+}
+.FontSelect.renderingFonts .fontSelectLine::after {
+  color: #216778;
+  content: "Loading...";
+  display: inline-block;
+  line-height: 2em;
+  opacity: 1;
+  position: absolute;
+  right: 2.625em;
+  top: 0;
+}
+/*---------------
+    Site list
+-----------------*/
+.SiteList {
+  border: 0.1875em solid #216778;
+  flex: none;
+  overflow: hidden !important;
+}
+.SiteList .TextBox.siteListTextBox {
+  border: none;
+  height: 1.5em;
+}
+.SiteList .TextBox.siteListTextBox:not(:first-child) {
+  border-top: 0.09375em solid #216778;
+}
+/*-------------
+    Tab panel
+---------------*/
+.TabPanel .tabPanelButtons {
+  align-items: stretch;
+  flex: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  overflow-y: hidden;
+  width: 100%;
+}
+.TabPanel .tabPanelButtons .tabPanelButton {
+  border-bottom: 0.1875em solid #216778;
+  border-left: 0 solid #216778;
+  border-right: 0 solid #216778;
+  border-top: 0 solid #216778;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.2em;
+  line-height: 2.2em;
+  font-weight: bold;
+  padding-bottom: 0;
+  padding-left: 0.8125em;
+  padding-right: 0.8125em;
+  padding-top: 0;
+  transition: background-color 250ms;
+}
+.TabPanel .tabPanelButtons .tabPanelButton .text {
+  color: #216778;
+  font-size: 1.2em;
+}
+.TabPanel .tabPanelButtons .tabPanelButton.active {
+  border-top: 0.1875em solid #216778;
+  border-right: 0.1875em solid #216778;
+  border-bottom: 0 solid #216778;
+  border-left: 0.1875em solid #216778;
+  cursor: default;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+}
+.TabPanel .tabPanelButtons .tabPanelButton.active .text {
+  color: #e96c4c;
+}
+.TabPanel .tabPanelButtons .tabPanelButton:hover:not(.active) {
+  background-color: #113a49;
+  transition: background-color 125ms;
+}
+.TabPanel .tabPanelButtons .tabPanelButton:hover:not(.active) .text {
+  color: #37abc8;
+}
+.TabPanel .tabPanelButtons::before,
+.TabPanel .tabPanelButtons::after {
+  border-bottom: 0.1875em solid #216778;
+  content: "";
+  display: inline-block;
+  flex: 1;
+}
+.TabPanel .tabPanelContainer {
+  flex: 1 1 auto;
+  margin-top: 1em;
+  overflow-y: auto;
+}
+.TabPanel .tabPanelContainer .Tab {
+  overflow-x: hidden;
+  transition: width 250ms, opacity 250ms;
+  width: 20em;
+}
+.TabPanel .tabPanelContainer .Tab:not(.active) {
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: width 250ms, opacity 125ms;
+  width: 0;
+}
+.TabPanel .tabPanelContainer .Tab > *:not(:first-child) {
+  margin-top: 0.625em;
+}
+.TabPanel.disabled {
+  opacity: 0.5;
+}
+/*-----------------
+   Toggle control
+-------------------*/
+.Toggle {
+  border: 0.1875em solid #216778;
+  box-sizing: content-box;
+  display: flex;
+  position: relative;
+  user-select: none;
+}
+.Toggle .on,
+.Toggle .off {
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  transition: background-color 250ms;
+  white-space: nowrap;
+  width: 50%;
+  z-index: 1;
+}
+.Toggle .on:hover:not(:active):not(.active),
+.Toggle .off:hover:not(:active):not(.active) {
+  background-color: #113a49;
+  transition: background-color 125ms;
+}
+.Toggle::before {
+  background-color: #216778;
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  transition: left 125ms;
+  width: 50%;
+}
+.Toggle.switchedOn::before {
+  left: 0;
+}
+/*-------------------
+    Up-down control
+---------------------*/
+.UpDown {
+  overflow: visible !important;
+}
+.UpDown .line {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: visible;
+}
+.UpDown .line > *:not(:first-child) {
+  margin-left: 0.625em;
+}
+.UpDown .status {
+  color: #37abc8;
+  font-size: 0.875em;
+  line-height: normal;
+  min-height: initial;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+.UpDown .status.disabled {
+  opacity: 0.5;
+}
+.UpDown .HBox {
+  overflow: visible;
+}
+.UpDown .line {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: visible;
+}
+.UpDown .line > *:not(:first-child) {
+  margin-left: 0.625em;
+}
+.UpDown .status {
+  color: #37abc8;
+  font-size: 0.875em;
+  line-height: normal;
+  min-height: initial;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+.UpDown .status.disabled {
+  opacity: 0.5;
+}
+.UpDown .HBox {
+  overflow: visible;
+}
+.UpDown .buttonDown,
+.UpDown .buttonUp {
+  position: relative;
+}
+.UpDown .buttonDown::before,
+.UpDown .buttonUp::before,
+.UpDown .buttonDown::after,
+.UpDown .buttonUp::after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  position: absolute;
+}
+.UpDown .buttonDown::before {
+  height: 0.75em;
+  left: 0.8125em;
+  top: 0.25em;
+  transform: skewX(-45deg);
+  width: 0.25em;
+}
+.UpDown .buttonDown::after {
+  height: 0.75em;
+  left: 0.8125em;
+  top: 1em;
+  transform: skewX(45deg);
+  width: 0.25em;
+}
+.UpDown .buttonUp::before {
+  height: 0.75em;
+  left: 1em;
+  top: 0.25em;
+  transform: skewX(45deg);
+  width: 0.25em;
+}
+.UpDown .buttonUp::after {
+  height: 0.75em;
+  left: 1em;
+  top: 1em;
+  transform: skewX(-45deg);
+  width: 0.25em;
+}
+.UpDown .Button.disabled {
+  opacity: 1;
+}
+.UpDown .Button.disabled .buttonDown::before,
+.UpDown .Button.disabled .buttonUp::before,
+.UpDown .Button.disabled .buttonDown::after,
+.UpDown .Button.disabled .buttonUp::after {
+  background-color: #216778;
+}
+.TrackBar {
+  border: 0.1875em solid #216778;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
+.TrackBar .value {
+  background-color: #216778;
+  display: inline-block;
+  height: 2em;
+  transition: width 250ms;
+  width: 30%;
+}
+.TrackBar label {
+  color: #ffffff;
+  display: inline-block;
+  height: 2em;
+  left: 0;
+  line-height: 2em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 2;
+}
+/*----------
+    Window
+------------*/
+html {
+  height: initial;
+  overflow: hidden;
+}
+.Window,
+body {
+  box-sizing: content-box;
+  font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', 'Ubuntu', sans-serif;
+  font-size: 75%;
+  height: 40em;
+  margin: 0;
+  padding: 1.5em;
+  position: relative;
+  width: 20em;
+}
+.Window > *:not(:first-child),
+body > *:not(:first-child) {
+  margin-top: 1em;
+}
+::selection {
+  background-color: #e96c4c;
+  color: #ffffff;
+}
+.hidden {
+  display: none !important;
+}
+/*--------
+    Logo
+----------*/
+#logo {
+  display: inline-block;
+  flex: none;
+  height: 2em;
+}
+/*---------------
+    Top section
+----------------*/
+.description {
+  color: #37abc8;
+  line-height: normal;
+  text-align: center;
+  white-space: pre-line;
+}
+.description.disabled {
+  opacity: 0.5;
+}
+.shortcut:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#topSection {
+  margin-top: 1em;
+}
+#topSection .status {
+  white-space: pre-line;
+}
+#appDescription {
+  height: 2.375em;
+  margin-right: 0.625em;
+}
+.siteToggleContainer {
+  flex: none !important;
+  margin-right: 0.625em;
+  width: 55%;
+}
+#siteToggle {
+  border: 0.1875em solid #216778;
+  box-sizing: content-box;
+  cursor: pointer;
+  height: 2em;
+  min-width: 2em;
+  overflow: hidden;
+  padding: 0;
+  transition: background-color 250ms, width 250ms;
+}
+#siteToggle:hover {
+  transition: background-color 125ms;
+}
+#siteToggle .text {
+  width: 100%;
+  word-break: break-word;
+}
+#siteToggle .text::before {
+  color: #37abc8;
+  content: "Toggle ";
+}
+/*------------
+    Settings
+--------------*/
+.controlContainer {
+  overflow: visible !important;
+}
+.controlContainer .line {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: visible;
+}
+.controlContainer .line > *:not(:first-child) {
+  margin-left: 0.625em;
+}
+.controlContainer .status {
+  color: #37abc8;
+  font-size: 0.875em;
+  line-height: normal;
+  min-height: initial;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+.controlContainer .status.disabled {
+  opacity: 0.5;
+}
+.controlContainer .HBox {
+  overflow: visible;
+}
+/* Toggle for filter mode */
+#modeToggle .darkMode {
+  background-image: url('../img/mode_dark_32.svg');
+}
+#modeToggle .lightMode {
+  background-image: url('../img/mode_light_32.svg');
+}
+/* Button with icon (without text) */
+.iconButton {
+  border: 0.1875em solid #216778;
+  box-sizing: content-box;
+  cursor: pointer;
+  display: inline-block;
+  flex: none;
+  height: 2em;
+  overflow: hidden;
+  padding: 0;
+  transition: background-color 250ms;
+  width: 2em;
+}
+.iconButton:hover {
+  transition: background-color 125ms;
+}
+.iconButton .icon {
+  background-size: contain;
+  margin: 0;
+  height: 2em;
+  width: 2em;
+}
+/*----------
+    Font
+------------*/
+/* Check box */
+.CheckBox {
+  cursor: pointer;
+}
+.CheckBox > input[type=checkbox]:checked + .check::before {
+  background-color: #ffffff;
+  height: 0.25em;
+  left: 0.25em;
+  top: 1.125em;
+  width: 0.5em;
+}
+.CheckBox > input[type=checkbox]:checked + .check::after {
+  background-color: #ffffff;
+  height: 0.25em;
+  left: 0.75em;
+  top: 0.875em;
+  width: 1em;
+}
+.CheckBox .check {
+  border: 0.1875em solid #216778;
+  box-sizing: content-box;
+  height: 2em;
+  margin: 0;
+  width: 2em;
+}
+.CheckBox .check::before,
+.CheckBox .check::after {
+  background-color: #216778;
+  content: "";
+  display: inline-block;
+  height: 0.25em;
+  left: 0.25em;
+  position: absolute;
+  transition-duration: 125ms;
+  transition-property: all;
+  top: 0.875em;
+  width: 1.5em;
+}
+.CheckBox .check::before {
+  transform: skewY(45deg);
+}
+.CheckBox .check::after {
+  transform: skewY(-45deg);
+}
+/* Text box */
+.TextBox {
+  border: 0.1875em solid #216778;
+  box-sizing: content-box;
+  height: 2em;
+  min-width: 0;
+  padding: 0 0.625em;
+  transition: background-color 125ms, color 250ms;
+  width: auto;
+}
+.TextBox:focus {
+  transition: background-color 125ms, color 125ms;
+}
+.TextBox::selection {
+  background-color: #e96c4c;
+}
+/*-------------
+    Site list
+---------------*/
+.siteListParent {
+  margin-top: 0 !important;
+}
+.siteListParent .description {
+  white-space: nowrap !important;
+}
+.SiteList {
+  border-top: none;
+}
+/*---------------
+    Scroll bars
+-----------------*/
+.HBox::-webkit-scrollbar,
+.VBox::-webkit-scrollbar,
+.TextArea::-webkit-scrollbar {
+  background-color: #00222b;
+  width: 1.375em;
+}
+.HBox::-webkit-scrollbar-thumb,
+.VBox::-webkit-scrollbar-thumb,
+.TextArea::-webkit-scrollbar-thumb {
+  background-color: #113a49;
+  border-left: 0.375em solid #00222b;
+}
+.HBox::-webkit-scrollbar-thumb:hover,
+.VBox::-webkit-scrollbar-thumb:hover,
+.TextArea::-webkit-scrollbar-thumb:hover {
+  background-color: #134151;
+}
+.HBox::-webkit-scrollbar-thumb:active,
+.VBox::-webkit-scrollbar-thumb:active,
+.TextArea::-webkit-scrollbar-thumb:active {
+  background-color: #216778;
+}
+/*------------
+    Footer
+-------------*/
+#footer .description {
+  margin-bottom: 0.25em;
+}
+#footer .Button {
+  border: 0.1875em solid #216778;
+  cursor: pointer;
+}
