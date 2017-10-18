@@ -60,14 +60,9 @@ fi
 	fi
     fi
 
-echo "*******************************************************************"
-
-    echo -n "Enter yes to update the archcfg:"
-    read  yes
-    if [ $yes=yes ]; then
-	echo "执行文件上传"   
+echo "*****************************执行文件上传****************************"
 	git add .
 	git commit -m "2017"
 	git push
-    fi
+	
     exit 0
