@@ -1,6 +1,0 @@
-47:49:44.605371 Watcher  Log continuation - Log started 2017-09-12T06:28:49.643806000Z
-47:49:49.368573 main     VirtualBox: object deletion starts
-47:49:49.368926 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={4afe423b-43e0-e9d0-82e8-ceb307940dda} aComponent={MediumWrap} aText={Medium '/bigD/VirtualBox VMs/win10_/win10_.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
-47:49:49.606255 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={0169423f-46b4-cde9-91af-1e9d5b6cd945} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
-47:49:54.370397 main     {00007fb3e4017f50} HostPowerServiceLinux::~HostPowerServiceLinux: RTThreadWait() for 5000 ms failed with VERR_TIMEOUT
-47:49:54.372229 main     VirtualBox: object deleted
