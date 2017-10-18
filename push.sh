@@ -40,15 +40,27 @@ fi
     echo "执行删除"
     rm home/lee/.config/VirtualBox -r
 
+if [ ! -d "home/lee/.emacs.d" ]; then
+    sleep 0.1
+    echo "home/lee/.emacs.d 目录不存在"
+fi
+    sleep 0.1
+    echo "home/lee/.emacs.d 目录存在"
+    echo "执行删除"
+    rm home/lee/.emacs.d -r
 
     if [ ! -d "home/lee/.config/chromium" ]; then
 	if [ ! -d "home/lee/.config/kuwo" ]; then
 	    if [ ! -d "home/lee/.config/VirtualBox" ]; then
+		if [ ! -d "home/lee/.emacs.d" ]; then
 		sleep 1
 		echo "清理完毕"
+		fi
 	    fi
 	fi
     fi
+
+echo "*******************************************************************"
 
     echo -n "Enter yes to update the archcfg:"
     read  yes
