@@ -53,17 +53,26 @@ fi
 	if [ ! -d "/bigD/git/archcfg/home/lee/.config/kuwo" ]; then
 	    if [ ! -d "/bigD/git/archcfhome/lee/.config/VirtualBox" ]; then
 		if [ ! -d "/bigD/git/archcfg/home/lee/.emacs.d" ]; then
-		sleep 1
+		sleep 0.1
 		echo "清理完毕"
 		fi
 	    fi
 	fi
     fi
 
-    echo "*****************************执行文件上传****************************"
-    cd /bigD/git/archcfg
+    echo "*****************************加up参数 执行文件上传****************************"
+for arg in "$1"
+do
+    echo $arg
+done
+
+echo $arg
+
+if [ "$arg"x = "up"x ]; then
+	echo "ok"
+	cd /bigD/git/archcfg
 	git add .
-	git commit -m "2017"
+	git commit -m "$2"
 	git push
-	
+    fi
     exit 0
