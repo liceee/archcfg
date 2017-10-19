@@ -23,9 +23,9 @@
 (add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
 (global-set-key [f1] 'cua-mode)
 (global-set-key [f2] 'undo) 
-(global-set-key [f3] 'replace-string)
-(global-set-key [f5] 'replace-regexp)
-(global-set-key [f6] 'package-install)
+(global-set-key [f3] 'package-install)
+(global-set-key [f5] 'replace-string)
+(global-set-key [f6] 'replace-regexp)
 
 
 ;;------------powerline------------------
@@ -55,3 +55,15 @@
 (autoload 'paredit-mode "paredit"
   "Minor mode for pseudo-structurally editing Lisp code."
   t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (## yasnippet-snippets cedit auto-compile))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
