@@ -21,6 +21,14 @@
 (add-hook 'perl-mode-hook 'hs-minor-mode) 
 (add-hook 'php-mode-hook 'hs-minor-mode) 
 (add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+(setq backup-by-copying t ; 自动备份
+backup-directory-alist
+'(("." . "/home/lee/.emacs.d/.saves")) ; 自动备份在目录"~/.saves"下
+delete-old-versions t ; 自动删除旧的备份文件
+kept-new-versions 6 ; 保留最近的6个备份文件
+kept-old-versions 2 ; 保留最早的2个备份文件
+version-control t) ; 多次备份
+
 (global-set-key [f1] 'cua-mode)
 (global-set-key [f2] 'undo) 
 (global-set-key [f3] 'package-install)

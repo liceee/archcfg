@@ -5,7 +5,9 @@ fi
 if [ ! -d "home/lee/" ]; then
     mkdir /bigD/git/archcfg/home/lee/
 fi
-cp /home/lee/.config /bigD/git/archcfg/home/lee/ -r
+cp /home/lee/.config/i3 /bigD/git/archcfg/home/lee/.config/ -r
+cp /home/lee/.config/fcitx /bigD/git/archcfg/home/lee/.config/ -r
+cp /home/lee/.config/tilda /bigD/git/archcfg/home/lee/.config/ -r
 cp /home/lee/.xinitrc /bigD/git/archcfg/home/lee/
 cp /home/lee/.Xresources /bigD/git/archcfg/home/lee/
 cp /home/lee/.zshrc /bigD/git/archcfg/home/lee/
@@ -41,12 +43,21 @@ if [ -d "/bigD/git/archcfg/home/lee/.emacs.d" ]; then
     rm home/lee/.emacs.d -r
 fi
 
+if [ -d "/bigD/git/archcfg/home/lee/.cache" ]; then
+    sleep 0.1
+    echo "/bigD/git/archcfg/home/lee/.cache 目录存在"
+    echo "执行删除"
+    rm home/lee/.cache -r
+fi
+    du -h -s /bigD/git/archcfg
+
     if [ ! -d "/bigD/git/archcfg/home/lee/.config/chromium" ]; then
 	if [ ! -d "/bigD/git/archcfg/home/lee/.config/kuwo" ]; then
 	    if [ ! -d "/bigD/git/archcfhome/lee/.config/VirtualBox" ]; then
 		if [ ! -d "/bigD/git/archcfg/home/lee/.emacs.d" ]; then
 		sleep 0.1
-		echo "清理完毕"
+		echo "备份工作以完成"
+#		tree /bigD/git/archcfg/
 		fi
 	    fi
 	fi
@@ -54,7 +65,7 @@ fi
     echo
     echo
     echo
-    echo "*****************************afp up 版本号 执行文件上传****************************"
+    echo "*****************************afp 加版本号 可提交分支****************************"
     echo $1
     if [ -n "$1" ]; then
 	echo "执行提交步骤"

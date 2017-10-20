@@ -218,6 +218,9 @@ bar {
 	}
 }
 
+
+hide_edge_borders both
+new_window 1pixel
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+x move scratchpad
 

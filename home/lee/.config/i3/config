@@ -269,6 +269,7 @@ for_window [window_role="prefwindow"] floating enable
 for_window [class="Chromium"] border 1pixel
 for_window [class="dolphin"] border 1pixel
 for_window [class="dolphin"] floating enable
+for_window [class="任务管理器"] floating enable
 for_window [class="qBittorrent"] floating enable
 for_window [title="KW Player"] floating enable
 for_window [class="urxvt"] floating enable

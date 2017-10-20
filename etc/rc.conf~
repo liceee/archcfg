@@ -1,2 +1,0 @@
-MODULES=(vboxdrv vboxnetflt)  
-/bin/lxdm
