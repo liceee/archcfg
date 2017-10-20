@@ -1,10 +1,14 @@
 #!/bin/bash
-if [ ! -d "home" ]; then
-    mkdir /bigD/git/archcfg/home
+echo "*****************************afp 复制文件夹****************************"
+
+if [ ! -d "/bigD/git/archcfg/home/" ]; then
+    mkdir /bigD/git/archcfg/home/
 fi
-if [ ! -d "home/lee/" ]; then
+
+if [ ! -d "/bigD/git/archcfg/home/lee/" ]; then
     mkdir /bigD/git/archcfg/home/lee/
 fi
+
 cp /home/lee/.config/i3 /bigD/git/archcfg/home/lee/.config/ -r
 cp /home/lee/.config/fcitx /bigD/git/archcfg/home/lee/.config/ -r
 cp /home/lee/.config/tilda /bigD/git/archcfg/home/lee/.config/ -r
@@ -49,7 +53,6 @@ if [ -d "/bigD/git/archcfg/home/lee/.cache" ]; then
     echo "执行删除"
     rm home/lee/.cache -r
 fi
-    du -h -s /bigD/git/archcfg
 
     if [ ! -d "/bigD/git/archcfg/home/lee/.config/chromium" ]; then
 	if [ ! -d "/bigD/git/archcfg/home/lee/.config/kuwo" ]; then
@@ -62,11 +65,11 @@ fi
 	    fi
 	fi
     fi
+    du -h -s /bigD/git/archcfg
     echo
     echo
     echo
-    echo "*****************************afp 加版本号 可提交分支****************************"
-    echo $1
+    echo $0 $1
     if [ -n "$1" ]; then
 	echo "执行提交步骤"
 	cd /bigD/git/archcfg
