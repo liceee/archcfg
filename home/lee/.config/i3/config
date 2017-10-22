@@ -62,7 +62,33 @@ bindsym XF86MonBrightnessUp exec --no-startup-id bash ~/.config/i3/prtscr.sh -fr
 bindsym XF86MonBrightnessDown exec --no-startup-id 
 
 #########################x#d#o#t#o#o#l#######################
-bindsym Ctrl+z exec --no-startup-idbash /home/lee/.config/i3/xdotool/jiaxue.sh
+bindsym Ctrl+Shift+z exec 
+
+set $buy_system  买药(B) 查询(C)
+bindsym Ctrl+Shift+x mode "$buy_system"
+set $space 按空格键传送
+
+mode "$buy_system" {
+    bindsym space exec --no-startup-id bash /home/lee/.config/i3/xdotool/jiaxue.sh
+    bindsym ctrl+space exec --no-startup-id bash /home/lee/.config/i3/xdotool/f7.sh
+    bindsym q exec --no-startup-id xdotool mousemove 988 91 click 1
+    bindsym w exec --no-startup-id xdotool mousemove 1466 90 click 1
+    bindsym e exec --no-startup-id xdotool mousemove 1804 114 click 1
+    bindsym a exec --no-startup-id xdotool mousemove 1046 375 click 1
+    bindsym s exec --no-startup-id xdotool mousemove 1417 405 click 1
+    bindsym d exec --no-startup-id xdotool mousemove 1841 385 click 1
+    bindsym z exec --no-startup-id xdotool mousemove 1013 675 click 1
+    bindsym x exec --no-startup-id xdotool mousemove 1459 691 click 1
+    bindsym c exec --no-startup-id xdotool mousemove 1843 686 click 1
+    bindsym Escape mode "default"
+}
+mode "$space" {
+    bindsym space exec xdotool mousemove 1747 310 click 1
+    bindsym Ctrl+space exec  xdotool mousemove 1369 489 click 1
+    bindsym Escape mode "default"
+    }
+
+
 #############################################################
 
 
@@ -158,9 +184,6 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-mode "$mode_brightness" {
-     
-}
 
 set $lee_system  date
 bindsym $mod+Shift+w mode "$lee_system"
