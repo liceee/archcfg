@@ -37,6 +37,6 @@ URxvt.saveLines:3000
 !!边框
 URxvt.borderLess:False
 !!字体设置
-Xft.dpi:96
-#URxvt.font:xft:Source Code Pro:antialias=True:pixelsize=18,xft:WenQuanYi Zen Hei:pixelsize=18
-#URxvt.boldfont:xft:Source Code Pro:antialias=True:pixelsize=18,xft:WenQuanYi Zen Hei:pixelsize=18
+!!Xft.dpi:96
+!!#URxvt.font:xft:Source Code Pro:antialias=True:pixelsize=18,xft:WenQuanYi Zen Hei:pixelsize=18
+!!#URxvt.boldfont:xft:Source Code Pro:antialias=True:pixelsize=18,xft:WenQuanYi Zen Hei:pixelsize=18

@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "运行脚本"
+echo $0 $1 
 echo "*****************************afp 备份文件中****************************"
 
 if [ ! -d "/bigD/git/archcfg/home/" ]; then
@@ -65,11 +67,10 @@ fi
 	    fi
 	fi
     fi
-    du -h -s /bigD/git/archcfg
+    du -h /bigD/git/archcfg
     echo
     echo
     echo
-    echo $0 $1
     if [ -n "$1" ]; then
 	echo "执行提交步骤"
 	cd /bigD/git/archcfg

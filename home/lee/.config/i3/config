@@ -42,6 +42,7 @@ bindsym $mod+d exec dmenu_run
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
+bindsym Print exec --no-startup-id bash ~/.config/i3/prtscr.sh -window  root
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -57,8 +58,12 @@ bindsym $mod+Ctrl+Right exec amixer -c 1 -- sset Master playback -1dB-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 1 -- sset Master playback -2dB-
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 1 -- sset Master playback -2dB+
 bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
-bindsym XF86MonBrightnessUp exec --no-startup-id 
+bindsym XF86MonBrightnessUp exec --no-startup-id bash ~/.config/i3/prtscr.sh -frame
 bindsym XF86MonBrightnessDown exec --no-startup-id 
+
+#########################x#d#o#t#o#o#l#######################
+bindsym Ctrl+z exec --no-startup-idbash /home/lee/.config/i3/xdotool/jiaxue.sh
+#############################################################
 
 
 # change focus
@@ -269,7 +274,8 @@ for_window [window_role="prefwindow"] floating enable
 for_window [class="Chromium"] border 1pixel
 for_window [class="dolphin"] border 1pixel
 for_window [class="dolphin"] floating enable
-for_window [class="任务管理器"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="ieaseMusic"] floating enable
 for_window [class="qBittorrent"] floating enable
 for_window [title="KW Player"] floating enable
 for_window [class="urxvt"] floating enable

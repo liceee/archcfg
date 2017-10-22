@@ -1,5 +1,5 @@
 
-;; Added by Package.el.  This must come before configurations of
+;; Added by Package.el.  This must come before configurationssof1111111111111111111111111
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
@@ -21,6 +21,7 @@
 (add-hook 'perl-mode-hook 'hs-minor-mode) 
 (add-hook 'php-mode-hook 'hs-minor-mode) 
 (add-hook 'emacs-lisp-mode-hook 'hs-minor-mode)
+(global-visual-line-mode 0)
 (setq backup-by-copying t ; 自动备份
 backup-directory-alist
 '(("." . "/home/lee/.emacs.d/.saves")) ; 自动备份在目录"~/.saves"下
