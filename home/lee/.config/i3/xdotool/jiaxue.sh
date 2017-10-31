@@ -18,4 +18,6 @@ xdotool mousemove 1883 28 click 3
 sleep 0.1
 xdotool mousemove 1883 40 click 3
 sleep 0.1
-xdotool mousemove 1458 400 
+xdotool mousemove 1458 400
+sleep 0.1
+xdotool click 1
