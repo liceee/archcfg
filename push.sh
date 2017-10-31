@@ -21,6 +21,7 @@ cp /home/lee/.Xresources /bigD/git/archcfg/home/lee/
 cp /home/lee/.zshrc /bigD/git/archcfg/home/lee/
 cp /home/lee/.emacs /bigD/git/archcfg/home/lee/
 cp /etc/mpd.conf /bigD/git/archcfg/etc/
+cp /home/lee/.oh-my-zsh /bigD/git/archcfg/home/lee -r
 #cp /home/lee/.emacs.d ./home/lee/.emacs.d -r
 
 if [ -d "/bigD/git/archcfg/home/lee/.config/chromium" ]; then
