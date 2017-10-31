@@ -1,0 +1,2 @@
+#!/bin/bash
+exec /bigD/git/archcfg/push.sh $1 $2 $3

@@ -6,9 +6,11 @@ echo "*****************************afp 备份文件中**************************
 if [ ! -d "/bigD/git/archcfg/home/" ]; then
     mkdir /bigD/git/archcfg/home/
 fi
-
 if [ ! -d "/bigD/git/archcfg/home/lee/" ]; then
     mkdir /bigD/git/archcfg/home/lee/
+fi
+if [ ! -d "/bigD/git/archcfg/etc/" ]; then
+    mkdir /bigD/git/archcfg/etc/ -p
 fi
 
 cp /home/lee/.config/i3 /bigD/git/archcfg/home/lee/.config/ -r
@@ -18,6 +20,7 @@ cp /home/lee/.xinitrc /bigD/git/archcfg/home/lee/
 cp /home/lee/.Xresources /bigD/git/archcfg/home/lee/
 cp /home/lee/.zshrc /bigD/git/archcfg/home/lee/
 cp /home/lee/.emacs /bigD/git/archcfg/home/lee/
+cp /etc/mpd.conf /bigD/git/archcfg/etc/
 #cp /home/lee/.emacs.d ./home/lee/.emacs.d -r
 
 if [ -d "/bigD/git/archcfg/home/lee/.config/chromium" ]; then

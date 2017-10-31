@@ -311,7 +311,6 @@ gaps inner 0
 smart_borders on
 
 exec --no-startup-id fcitx
-exec --no-startup-id mpd
 exec --no-startup-id compton
 exec --no-startup-id tilda
 exec --no-startup-id feh --bg-scale /bigD/down/bg.jpg
