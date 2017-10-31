@@ -58,11 +58,11 @@ bindsym $mod+Ctrl+Right exec amixer -c 1 -- sset Master playback -1dB-
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 1 -- sset Master playback -2dB-
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 1 -- sset Master playback -2dB+
 bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
-bindsym XF86MonBrightnessUp exec --no-startup-id bash ~/.config/i3/prtscr.sh -frame
-bindsym XF86MonBrightnessDown exec --no-startup-id 
+#bindsym XF86MonBrightnessUp exec --no-startup-id bash ~/.config/i3/prtscr.sh -frame
+#bindsym XF86MonBrightnessDown exec --no-startup-id 
 
 #########################x#d#o#t#o#o#l#######################
-bindsym Ctrl+Shift+z exec 
+#bindsym Ctrl+Shift+z exec 
 
 set $buy_system  买药(B) 查询(C)
 bindsym Shift+space mode "$buy_system"
@@ -269,7 +269,7 @@ bindsym $mod+Shift+x move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+x scratchpad show
 
-# Lock Screen
+ Screen
 bindsym $mod+Control+Shift+l exec i3lock -f
 
 # use window title, but no border
