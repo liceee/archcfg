@@ -1,24 +1,35 @@
-out_to_x no
-out_to_console yes
-background no
-double_buffer no
-update_interval 1
-total_run_times 0
-override_utf8_locale no
-short_units yes
-if_up_strictness address
-cpu_avg_samples 2
+conky.config = {
+    background = false,
+    out_to_x = false,
+    out_to_console = true,
+    use_xft = true,
+    update_interval = 1,
+    total_run_times = 0,
+    no_buffers = flase,
+    pad_percents = 2,
+    use_spacer = 'left',
+}
 
-
-TEXT
+conky.text = [[
 [
-{ "full_text" : "[-${exec mpc |sed -n "1p"|sed 's/.*\///g'|sed "s/\..*//g"}-]" , "color" : "\#8BC3E7" },\
-{ "full_text" : "${upspeedf wlp3s0}KiB  ${downspeedf wlp3s0}KiB" , "color" : "\#FF9D17" },\
-{ "full_text" : " ${fs_used_perc /}%" , "color" : "\#FF9D17" },\
-{ "full_text" : " ${cpubar 10,10}" , "color" : "\#8BC3E7" },\
-{ "full_text" : " ${membar 10,12}" , "color" : "\#8BC3E7" },\
-{ "full_text" : "${exec curl icanhazip.com}  ${exec hostname -i}" , "color" : "\#8BC3E7"},\
-{ "full_text" : " ${battery BAT1}" , "color" : "\#A4DC6A" },\
-{ "full_text" : " ${time %Y/%m/%d %a}" , "color" : "\#FF9D17" },\
-{ "full_text" : " ${time %H:%M}" , "color" : "\#8BADF9" }
+        {"full_text":"<span background='\#002B36' foreground='\#E8E8E7'>\ue0ba</span>","separator": false, "separator_block_width":0, "markup": "pango"},
+	# MPD
+    	{"full_text":"<span background='\#E8E8E7'> ♫ ${mpd_bar 1,10} ${exec mpc current}</span>","separator": false, "separator_block_width":0, "markup": "pango"},
+        {"full_text":"<span background='\#E8E8E7' foreground='\#002B36'>\ue0ba</span>","separator": false, "separator_block_width":0, "markup": "pango", "mpd_title":10},
+	# CPU
+	{"full_text": "<span foreground='\#002B36'></span><span background='\#002B36'>  ${cpubar 10,10} </span>", "markup": "pango", "separator":false, "color" : "\#E8E8E7" , "separator_block_width":0},
+    	# Temperature
+    	{"full_text": "<span foreground='\#4E9A06' background='\#002B36'>\ue0ba</span><span background='\#4E9A06'> ${hwmon temp 1}°C </span>",
+	"markup": "pango", "separator":false, "separator_block_width":0},
+	# Ram
+    	{"full_text": "<span foreground='\#3465A4' background='\#4E9A06'>\ue0ba</span><span background='\#3465A4'> ${membar 10,12} </span>", "markup": "pango", "separator":false, "separator_block_width":0},
+    	# Network
+    	{"full_text": "<span background='\#FFF000'><span background='\#3465A4' foreground='\#FFF000'>\ue0ba</span> ${battery_bar 1,10 BAT1} </span><span background='\#FFF000' foreground='\#FF6400'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width": 0},
+     	# Date:
+	{"full_text": "<span background='\#FF6400' foreground='\#FF6400'></span><span background='\#FF6400'>   ${time %Y/%m/%d %a} </span><span background='\#FF6400' foreground='\#E8E8E7'>\ue0ba</span>",
+	"separator": false, "separator_block_width": 0, "markup": "pango"},
+	# Time:
+    	{"full_text":"<span background='\#E8E8E7'> ${time %H:%M:%S} </span>","separator":false, "separator_block_width":0, "markup": "pango" },
+	{"full_text": "<span foreground='\#E8E8E7'>\ue0bc</span>", "markup": "pango", "separator": false, "separator_block_width": 0}
 ],
+]]

@@ -1,0 +1,28 @@
+background = false
+out_to_x = false
+out_to_console = true
+use_spacer = left
+out_to_console yes
+double_buffer no
+total_run_times 0
+override_utf8_locale no
+short_units yes
+if_up_strictness address
+cpu_avg_samples 2
+
+
+TEXT
+[\
+{ "full_text" : "[-${exec mpc |sed -n "1p"|sed 's/.*\///g'|sed "s/\..*//g"} ${mpd_bar 1,10}]" , "color" : "\#8BC3E7" },\
+# Network
+{"full_text": "<span background='\#0d7373'><span background='\#0d5173' foreground='\#0d7373'></span>   ${wireless_bitrate wlp3s0} ${wireless_link_qual_perc wlp3s0}% ${downspeed wlp4s0}${upspeed wlp4s0}</span><span background='\#0d7373' foreground='\#0d5973'></span>", "markup": "pango", "separator":false, "separator_block_width": 0},
+
+{ "full_text" : " ${upspeedf wlp3s0}KiB ${downspeedf wlp3s0}KiB" , "color" : "\#FF9D17" },\
+{ "full_text" : " ${fs_used_perc /}%" , "color" : "\#FF9D17" },\
+{ "full_text" : " ${cpubar 10,10}" , "color" : "\#8BC3E7" },\
+{ "full_text" : " ${membar 10,12}" , "color" : "\#8BC3E7" },\
+{ "full_text" : "${exec curl icanhazip.com}  ${exec hostname -i}" , "color" : "\#8BC3E7"},\
+{ "full_text" : " ${battery_bar 1,10 BAT1}" , "color" : "\#A4DC6A" },\
+{ "full_text" : " ${time %Y/%m/%d %a}" , "color" : "\#FF9D17" },\
+{ "full_text" : " ${time %H:%M:%S}" , "color" : "\#8BADF9" }
+],
