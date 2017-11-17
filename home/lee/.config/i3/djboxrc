@@ -1,0 +1,8 @@
+[%General]
+folder_root_music_cache=C:/Djbox/music/cache
+
+[Skinned]
+skin_path=:/default
+
+[Decoder]
+disabled_plugins=@Invalid()

@@ -71,7 +71,11 @@ fi
 	    fi
 	fi
     fi
-    du -h /bigD/git/archcfg
+    echo "$ tree -a home/lee/.config/i3"
+    tree -a home/lee/.config/i3
+    echo ---------------------------
+    echo "$ du -h -d1 /bigD/git/archcfg"
+    du -h -d1 /bigD/git/archcfg
     echo
     echo
     echo
