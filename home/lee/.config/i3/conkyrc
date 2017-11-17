@@ -12,21 +12,21 @@ conky.config = {
 
 conky.text = [[
 [
-        {"full_text":"<span background='\#E8E8E700'></span><span background='\#E8E8E701' foreground='\#E8E8E7'>\ue0ba</span>","separator": false, "separator_block_width":0, "markup": "pango"},
+        {"full_text":"<span background='\#E8E8E700'></span><span background='\#E8E8E701' foreground='\#E8E8E799'>\ue0ba</span>","separator": false, "separator_block_width":0, "markup": "pango"},
 	# MPD
-    	{"full_text": "<span foreground='\#E8E8E700' background='\#002B36'></span><span background='\#E8E8E7'> ♫${mpd_bar 1,10} </span><span background='\#E8E8E7' foreground='\#049BE0'>\ue0ba</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
+    	{"full_text": "<span foreground='\#E8E8E700' background='\#002B36'></span><span background='\#E8E8E799'> ♫${mpd_bar 1,10} </span><span background='\#E8E8E799' foreground='\#049BE0'>\ue0ba</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
 	# CPU
-    	{"full_text": "<span background='\#049BE0'>  ${cpubar 1,10}</span><span background='\#049BE0' foreground='\#049BE0'>\ue0be</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
+    	{"full_text": "<span background='\#049BE0'>  ${cpubar 1,10}</span><span background='\#049BE0' foreground='\#049BE099'>\ue0be</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
     	# Temperature
-    	{"full_text": "<span background='\#049BE0'>${hwmon temp 1}° </span><span background='\#049BE0' foreground='\#002D40'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
+    	{"full_text": "<span background='\#049BE099'>${hwmon temp 1}° </span><span background='\#049BE099' foreground='\#002D40'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
 	# Ram
-    	{"full_text": "<span background='\#002D40'>  ${membar 10,12} </span><span background='\#002D40' foreground='\#2C594F'>\ue0be</span>", "markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#FFFFFF99"},
+    	{"full_text": "<span background='\#002D40'>  ${membar 10,12} </span><span background='\#002D40' foreground='\#2C594F99'>\ue0be</span>", "markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#FFFFFF99"},
     	# Network
-    	{"full_text": "<span background='\#2C594F'>   ${fs_used_perc /bigD/}%  </span><span background='\#2C594F' foreground='\#FFA644'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width": 0, "color" : "\#FFFFFF99"},
+    	{"full_text": "<span background='\#2C594F99'>   ${fs_used_perc /bigD/}%  </span><span background='\#2C594F99' foreground='\#FFA644'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width": 0, "color" : "\#FFFFFF99"},
      	# Date:
 	{"full_text": "<span background='\#FFA644'>   ${battery_bar 1,10 BAT1} </span><span background='\#FFA644' foreground='\#E54661'>\ue0be</span>","separator": false, "separator_block_width": 0, "markup": "pango", "color" : "\#00000099"},
 	# Time:
-    	{"full_text": "<span background='\#E54661'>  ${time %c}  </span>","separator":false, "separator_block_width":0, "markup": "pango" , "color" : "\#00000099"},
-	{"full_text": "<span foreground='\#E54661'>\ue0bc</span>", "markup": "pango", "separator": false, "separator_block_width": 0, "color" : "\#002B36"}
+    	{"full_text": "<span background='\#E54661'>  ${time %c}  </span>","separator":false, "separator_block_width":0, "markup": "pango" , "color" : "\#00000090"},
+	{"full_text": "<span foreground='\#E54661'>\ue0bc</span>", "markup": "pango", "separator": false, "separator_block_width": 0, "color" : "\#FFA644"}
 ],
 	]]

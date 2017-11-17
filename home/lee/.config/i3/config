@@ -312,16 +312,16 @@ colors {
         background #00000000
         statusline #00000099
 #        separator #71007A90
-	#焦点
-        focused_workspace  #A6215F	#E8E8E722	#E8E8E7
+	#焦点		   边		内框		文字
+        focused_workspace  #A6215F55	#A6215F		#E8E8E7
 	#活动
-        active_workspace   #002B3600	#002B3600 	#FF0000
+        active_workspace   #002B3699	#002B3699 	#FF0000
 	#非活动
-        inactive_workspace #002B3600 	#002B3600	#E8E8E7
+        inactive_workspace #002B3633 	#002B3600	#E8E8E7
 	#紧急
-        urgent_workspace   #E8E8E700	#E8E8E7 	#71007A
+        urgent_workspace   #E8E8E700	#FF0000 	#71007A
 	#包边
-        binding_mode       #E8E8E7	#E8E8E7 	#71007A
+        binding_mode       #A6215F	#A6215F 	#E8E8E7
 	}
 }
 
@@ -369,7 +369,8 @@ focus_follows_mouse no
 #exec --no-startup-id compton
 exec --no-startup-id tilda
 exec --no-startup-id wicd-gtk -t
-exec --no-startup-id feh --bg-scale /bigD/down/bg.jpg
+#exec --no-startup-id feh --bg-scale /bigD/down/bg.jpg
+exec --no-startup-id 'cvlc -L  --video-wallpaper --no-audio .config/i3/wallpapers/bing/sunset_over_sea_nimiaRF_754386_1080_HD_ZH-CN.mp4'
 exec --no-startup-id msiklm 0x0000FF
 exec --no-startup-id fcitx
 exec --no-startup-id fcitx
@@ -393,6 +394,5 @@ for_window [class="[.]Ark"] floating enable
 for_window [class="GMPC"] floating enable
 for_window [class="ksysguard"] floating enable
 for_window [class="搜索歌词"] floating enable
-for_window [class="^.*"] border pixel 0
 # directory to ~/work
 #for_window [title="x200: ~/work"] floating enable
