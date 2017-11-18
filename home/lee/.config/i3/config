@@ -313,11 +313,11 @@ colors {
         statusline #00000099
 #        separator #71007A90
 	#焦点		   边		内框		文字
-        focused_workspace  #A6215F55	#A6215F		#E8E8E7
+        focused_workspace  #002B3655	#E54661		#049BE0
 	#活动
         active_workspace   #002B3699	#002B3699 	#FF0000
 	#非活动
-        inactive_workspace #002B3633 	#002B3600	#E8E8E7
+        inactive_workspace #002B3633 	#002B3600	#049BE0
 	#紧急
         urgent_workspace   #E8E8E700	#FF0000 	#71007A
 	#包边
