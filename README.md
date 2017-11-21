@@ -3,5 +3,3 @@
 archcfg
 =======
 Archlinux I3WM 配置文件
-
-如有信息泄漏 敬请告知 感谢
