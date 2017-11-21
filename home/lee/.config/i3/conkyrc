@@ -16,17 +16,17 @@ conky.text = [[
 	# MPD
     	{"full_text": "<span foreground='\#E8E8E700' background='\#002B36'></span><span background='\#E8E8E799'>  ♫${mpd_bar 1,10}  </span><span background='\#E8E8E799' foreground='\#049BE0'>\ue0ba</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
 	# CPU
-    	{"full_text": "<span background='\#049BE0'>  ${cpubar 1,10} </span><span background='\#049BE0' foreground='\#049BE099'>\ue0be</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
+    	{"full_text": "<span background='\#049BE099'>  ${cpubar 1,10} </span><span background='\#049BE0' foreground='\#049BE099'>\ue0be</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
     	# Temperature
-    	{"full_text": "<span background='\#049BE099'>  ${hwmon temp 1}° </span><span background='\#049BE099' foreground='\#002D40'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
+    	{"full_text": "<span background='\#049BE099'>  ${hwmon temp 1}° </span><span background='\#049BE099' foreground='\#002D4099'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#FFFFFF"},
 	# Ram
-    	{"full_text": "<span background='\#002D40'>  ${membar 10,12} </span><span background='\#002D40' foreground='\#2C594F99'>\ue0be</span>", "markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#FFFFFF99"},
+    	{"full_text": "<span background='\#002D4099'>  ${membar 10,12} </span><span background='\#002D4099' foreground='\#2C594F99'>\ue0be</span>", "markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#FFFFFF99"},
     	# Network
     	{"full_text": "<span background='\#2C594F99'>   ${fs_used_perc /bigD/}%  </span><span background='\#2C594F99' foreground='\#FFA644'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width": 0, "color" : "\#FFFFFF99"},
      	# Date:
 	{"full_text": "<span background='\#FFA644'>   ${battery_bar 1,10 BAT1} </span><span background='\#FFA644' foreground='\#E54661'>\ue0be</span>","separator": false, "separator_block_width": 0, "markup": "pango", "color" : "\#00000099"},
 	# Time:
-    	{"full_text": "<span background='\#E54661'>  ${time  %x %W周 星期%a} </span><span background='\#E54661' foreground='\#002D4099'>\ue0be</span>","separator":false, "separator_block_width":0, "markup": "pango" , "color" : "\#00000090"},
-	{"full_text": "<span background='\#002D4099'>${time ‧. ﹒.%I ‧ %M﹒%S} </span><span background='\#002D4099' foreground='\#FFA64400'>${exec stars-i3}${exec dot-i3}   </span><span foreground='\#002D4099'>\ue0bc</span>", "markup": "pango", "separator": false, "separator_block_width": 0, "color" : "\#FFFFFF"}
+    	{"full_text": "<span background='\#E54661'>  ${time %Y/%m/%d 星期%a} </span><span background='\#E54661' foreground='\#002D4099'>\ue0be</span>","separator":false, "separator_block_width":0, "markup": "pango" , "color" : "\#FFFFFF"},
+	{"full_text": "<span background='\#002D4099'><span background='\#002D4099' foreground='\#FFA64477'>‧.${exec bash ~/.config/i3/time-left.sh} .</span>${exec date +%H |sed -e 's/^0//' -e 's/ 0/ /g'} : ${exec date +%M|sed -e 's/^0//' -e 's/ 0/ /g'}<span background='\#002D4099' foreground='\#FFA64477'>.</span></span><span background='\#002D4099' foreground='\#FFA64477'>${exec stars-i3}${exec dot-i3} </span><span foreground='\#002D4099'>\ue0bc</span>", "markup": "pango", "separator": false, "separator_block_width": 0, "color" : "\#FFFFFF"}
 ],
 	]]
