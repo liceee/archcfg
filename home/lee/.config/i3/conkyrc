@@ -12,9 +12,9 @@ conky.config = {
 
 conky.text = [[
 [
-        {"full_text":"<span background='\#E8E8E700'></span><span background='\#E8E8E701' foreground='\#E8E8E799'>\ue0ba</span>","separator": false, "separator_block_width":0, "markup": "pango"},
+        {"full_text":"<span background='\#E8E8E700'></span><span background='\#E8E8E701' foreground='\#E8E8E711'>\ue0ba</span>","separator": false, "separator_block_width":0, "markup": "pango"},
 	# MPD
-    	{"full_text": "<span foreground='\#E8E8E700' background='\#002B36'></span><span background='\#E8E8E799'>  ♫${mpd_bar 1,10}  </span><span background='\#E8E8E799' foreground='\#049BE0'>\ue0ba</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
+    	{"full_text": "<span foreground='\#E8E8E700' background='\#002B36'></span><span background='\#E8E8E711'>  ♫${mpd_bar 1,10}  </span><span background='\#E8E8E711' foreground='\#049BE0'>\ue0ba</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
 	# CPU
     	{"full_text": "<span background='\#049BE099'>  ${cpubar 1,10} </span><span background='\#049BE0' foreground='\#049BE099'>\ue0be</span>","markup": "pango", "separator":false, "separator_block_width":0, "color" : "\#00000099"},
     	# Temperature

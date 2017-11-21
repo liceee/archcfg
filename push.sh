@@ -12,6 +12,9 @@ fi
 if [ ! -d "/bigD/git/archcfg/etc/" ]; then
     mkdir /bigD/git/archcfg/etc/ -p
 fi
+if [ ! -d "/bigD/git/archcfg/bin/" ]; then
+    mkdir /bigD/git/archcfg/bin/ -p
+fi
 
 cp /etc/mpd.conf /bigD/git/archcfg/etc/
 cp /home/lee/.config/i3 /bigD/git/archcfg/home/lee/.config/ -r
@@ -22,6 +25,9 @@ cp /home/lee/.Xresources /bigD/git/archcfg/home/lee/
 cp /home/lee/.zshrc /bigD/git/archcfg/home/lee/
 cp /home/lee/.emacs /bigD/git/archcfg/home/lee/
 cp /home/lee/.bashrc /bigD/git/archcfg/home/lee/
+cp /bin/afp /bigD/git/archcfg/bin/
+cp /bin/stars-i3 /bigD/git/archcfg/bin/
+cp /bin/moon-i3 /bigD/git/archcfg/bin/
 #cp /home/lee/.emacs.d ./home/lee/.emacs.d -r
 
 if [ -d "/bigD/git/archcfg/home/lee/.config/chromium" ]; then
