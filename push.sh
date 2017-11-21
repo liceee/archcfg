@@ -25,9 +25,9 @@ cp /home/lee/.Xresources /bigD/git/archcfg/home/lee/
 cp /home/lee/.zshrc /bigD/git/archcfg/home/lee/
 cp /home/lee/.emacs /bigD/git/archcfg/home/lee/
 cp /home/lee/.bashrc /bigD/git/archcfg/home/lee/
-cp /bin/afp /bigD/git/archcfg/bin/
-cp /bin/stars-i3 /bigD/git/archcfg/bin/
-cp /bin/moon-i3 /bigD/git/archcfg/bin/
+cp /bin/afp /bigD/git/archcfg/usr/bin/
+cp /bin/stars-i3 /bigD/git/archcfg/usr/bin/
+cp /bin/moon-i3 /bigD/git/archcfg/usr/bin/
 #cp /home/lee/.emacs.d ./home/lee/.emacs.d -r
 
 if [ -d "/bigD/git/archcfg/home/lee/.config/chromium" ]; then
