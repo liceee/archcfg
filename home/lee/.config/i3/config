@@ -77,7 +77,7 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 #bindsym Ctrl+Shift+button5 exec mpc volume 100
 
 #########################x#d#o#t#o#o#l#######################
-#bindsym Ctrl+Shift+z exec 
+bindsym $mod+z exec --no-startup-id xfmpc
 
 set $buy_system  买药(B) 查询(C)
 bindsym Shift+ctrl+alt+n+m mode "$buy_system"
@@ -367,14 +367,14 @@ smart_gaps on
 smart_borders on
 focus_follows_mouse no
 
-#exec --no-startup-id compton
+exec --no-startup-id compton -b
 exec --no-startup-id tilda
 exec --no-startup-id wicd-gtk -t
 exec --no-startup-id feh --bg-scale /bigD/down/bg.jpg
 #exec --no-startup-id 'cvlc -L  --video-wallpaper --no-audio .config/i3/wallpapers/bing/sunset_over_sea_nimiaRF_754386_1080_HD_ZH-CN.mp4'
 exec --no-startup-id msiklm 0x0000FF
 exec --no-startup-id fcitx
-exec --no-startup-id fcitx
+exec --no-startup-id mpd
 exec --no-startup-id dpms 0 0 0
 exec --no-startup-id xset s off
 
@@ -394,6 +394,6 @@ for_window [title=".*VLC.*"] floating enable
 for_window [class="[.]Ark"] floating enable
 for_window [class="GMPC"] floating enable
 for_window [class="ksysguard"] floating enable
-for_window [class="搜索歌词"] floating enable
+for_window [class=".*Xfmpc"] floating enable
 # directory to ~/work
 #for_window [title="x200: ~/work"] floating enable
