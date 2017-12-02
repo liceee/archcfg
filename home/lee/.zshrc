@@ -87,3 +87,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval $(thefuck --alias)
 alias wallpaper=" ~/.config/i3/wallpaper.sh"
+xset s off
+xset s noblank
+
+unset ftp_proxy
+unset http_proxy
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.gem/ruby/2.4.0/bin

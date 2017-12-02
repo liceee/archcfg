@@ -395,5 +395,7 @@ for_window [class="[.]Ark"] floating enable
 for_window [class="GMPC"] floating enable
 for_window [class="ksysguard"] floating enable
 for_window [class=".*Xfmpc"] floating enable
+for_window [title=".*Friends.*"] floating enable
+for_window [title=".*歌词.*"] floating enable
 # directory to ~/work
 #for_window [title="x200: ~/work"] floating enable
