@@ -74,6 +74,7 @@ if [ $A == 23 ]; then
 fi
 if [ $A == 0 ]; then
     echo "🐭"
+    wallpaper&
 fi
 
 exit
