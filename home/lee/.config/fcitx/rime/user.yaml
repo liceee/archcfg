@@ -1,4 +1,8 @@
 var:
-  previously_selected_schema: cangjie5
+  option:
+    simplification: true
+  previously_selected_schema: luna_pinyin
   schema_access_time:
-    cangjie5: 1507741620
+    cangjie5: 1513398611
+    luna_pinyin: 1513398657
+    luna_pinyin_fluency: 1513398616

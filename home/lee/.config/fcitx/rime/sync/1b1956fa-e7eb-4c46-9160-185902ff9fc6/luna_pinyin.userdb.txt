@@ -1,0 +1,14 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.2.9
+#@/tick	9
+#@/user_id	1b1956fa-e7eb-4c46-9160-185902ff9fc6
+han yu 	漢語	c=1 d=0.965605 t=9
+kuai 	快	c=1 d=0.995012 t=9
+mi ling 	密令	c=1 d=1 t=9
+qie 	切	c=1 d=0.99005 t=9
+shi 	是	c=1 d=0.97531 t=9
+shui 	水	c=1 d=0.985112 t=9
+tai wan 	臺灣	c=2 d=1.93124 t=9
+tang lang 	趟浪	c=1 d=0.980199 t=9
