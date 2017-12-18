@@ -2,14 +2,15 @@
 #@/db_name	cangjie5.userdb
 #@/db_type	userdb
 #@/rime_version	1.2.9
-#@/tick	12
+#@/tick	22
 #@/user_id	1b1956fa-e7eb-4c46-9160-185902ff9fc6
-a 	日	c=2 d=1.91683 t=12
-df 	杰	c=2 d=1.93131 t=12
-fdsd 	小櫃子	c=1 d=0.985112 t=12
-gg 	圭	c=1 d=1 t=12
-ks 	力	c=1 d=0.995012 t=12
-s 	尸	c=2 d=1.91693 t=12
-encasf 	日尸杰	c=1 d=0.980199 t=12
-encksgg 	力圭	c=0 d=0.1 t=12
-encsaf 	尸日杰	c=1 d=0.960789 t=12
+a 	日	c=2 d=1.91683 t=22
+df 	杰	c=2 d=1.93131 t=22
+dou 	桃山	c=1 d=1 t=13
+fdsd 	小櫃子	c=1 d=0.985112 t=22
+gg 	圭	c=1 d=1 t=22
+ks 	力	c=1 d=0.995012 t=22
+s 	尸	c=3 d=2.82344 t=22
+encasf 	日尸杰	c=1 d=0.980199 t=22
+encksgg 	力圭	c=0 d=0.1 t=22
+encsaf 	尸日杰	c=1 d=0.960789 t=22

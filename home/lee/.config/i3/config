@@ -372,11 +372,11 @@ exec --no-startup-id tilda
 exec --no-startup-id wicd-gtk -t
 exec --no-startup-id "feh --bg-scale /bigD/down/bg.jpg"
 #exec --no-startup-id 'cvlc -L  --video-wallpaper --no-audio .config/i3/wallpapers/bing/sunset_over_sea_nimiaRF_754386_1080_HD_ZH-CN.mp4'
-exec --no-startup-id msiklm 0x0000FF
+#exec --no-startup-id msiklm 0x0000FF
 exec --no-startup-id fcitx
-exec --no-startup-id mpd
-exec --no-startup-id dpms 0 0 0
-exec --no-startup-id xset s off
+#exec --no-startup-id mpd
+#exec --no-startup-id dpms 0 0 0
+#exec --no-startup-id xset s off
 
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="prefwindow"] floating enable

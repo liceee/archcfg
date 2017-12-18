@@ -1,0 +1,18 @@
+# Rime user dictionary
+#@/db_name	terra_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.2.9
+#@/tick	5
+#@/user_id	1b1956fa-e7eb-4c46-9160-185902ff9fc6
+cai2 neng2 	才能	c=0 d=0.1 t=0
+chang3 jiao4 gua4 gou1 	廠校掛鉤	c=1 d=1 t=5
+cuo1 shang1 	磋商	c=0 d=0.1 t=1
+e2 wu4 	訛誤	c=0 d=0.1 t=0
+e2 wu4 cai2 neng2 o1 yi1 tian1 	訛誤才能噢一天	c=1 d=1 t=1
+ei1 o1 ni1 yu3 o1 	誒噢呢與噢	c=1 d=1 t=4
+ni1 	呢	c=0 d=0.1 t=1
+o1 	噢	c=0 d=0.1 t=0
+wu2 	無	c=0 d=0.1 t=1
+wu2 ni1 cuo1 shang1 	無呢磋商	c=1 d=1 t=2
+yi1 	一	c=1 d=1 t=3
+yi1 tian1 	一天	c=0 d=0.1 t=0

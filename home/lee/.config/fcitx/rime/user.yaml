@@ -3,6 +3,8 @@ var:
     simplification: true
   previously_selected_schema: luna_pinyin
   schema_access_time:
+    bopomofo_tw: 1513399389
     cangjie5: 1513398611
-    luna_pinyin: 1513398657
+    luna_pinyin: 1513521269
     luna_pinyin_fluency: 1513398616
+    luna_pinyin_simp: 1513521253

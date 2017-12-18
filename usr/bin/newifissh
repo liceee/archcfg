@@ -1,0 +1,4 @@
+#!/bin/bash
+curl -d "{'id': 1, 'jsonrpc': '2.0', 'method': 'call', 'params': ['0000000000000\
+0000000000000000000', 'xapi.basic', 'open_dropbear', {}]}" http://192.168.99.1/ubus
+ssh root@192.168.99.1
