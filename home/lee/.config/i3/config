@@ -346,6 +346,8 @@ bindsym $mod+y border pixel 3
 # use neither window title nor border
 bindsym $mod+u border none
 
+# i3 lock
+bindsym $mod+Shift+Ctrl+l exec i3lock
 
 
 # Toggle between hide state and show state
@@ -374,6 +376,7 @@ exec --no-startup-id "feh --bg-scale /bigD/down/bg.jpg"
 #exec --no-startup-id 'cvlc -L  --video-wallpaper --no-audio .config/i3/wallpapers/bing/sunset_over_sea_nimiaRF_754386_1080_HD_ZH-CN.mp4'
 #exec --no-startup-id msiklm 0x0000FF
 exec --no-startup-id fcitx
+exec --no-startup-id redshift
 #exec --no-startup-id mpd
 #exec --no-startup-id dpms 0 0 0
 #exec --no-startup-id xset s off
