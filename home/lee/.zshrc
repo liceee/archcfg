@@ -88,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 eval $(thefuck --alias)
 eval $(nohup ~/.config/i3/wallpaper.sh >/dev/null 2>&1)
 alias wallpaper=" ~/.config/i3/wallpaper.sh"
+alias em="emacs"
 xset s off
 xset s noblank
 

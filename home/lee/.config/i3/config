@@ -64,8 +64,8 @@ bindsym Ctrl+Shift+Right   exec mpc volume +10
 bindsym Ctrl+XF86AudioMute exec mpc toggle
 
 
-bindsym $mod+Ctrl+Left exec amixer -c 1 -- sset Master playback -1dB+
-bindsym $mod+Ctrl+Right exec amixer -c 1 -- sset Master playback -1dB-
+bindsym KP_Subtract exec amixer -c 1 -- sset Master playback -1dB+
+bindsym KP_Add exec amixer -c 1 -- sset Master playback -1dB-
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 1 -- sset Master playback -2dB-
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 1 -- sset Master playback -2dB+
@@ -77,7 +77,8 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
 #bindsym Ctrl+Shift+button5 exec mpc volume 100
 
 #########################x#d#o#t#o#o#l#######################
-bindsym $mod+z exec --no-startup-id xfmpc
+#bindsym $mod+z exec --no-startup-id xfmpc
+bindsym $mod+z exec --no-startup-id cantata
 
 set $buy_system  买药(B) 查询(C)
 bindsym Shift+ctrl+alt+n+m mode "$buy_system"
