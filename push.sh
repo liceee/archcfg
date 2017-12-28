@@ -12,9 +12,6 @@ fi
 if [ ! -d "/bigD/git/archcfg/etc/" ]; then
     mkdir /bigD/git/archcfg/etc/ -p
 fi
-if [ ! -d "/bigD/git/archcfg/bin/" ]; then
-    mkdir /bigD/git/archcfg/bin/ -p
-fi
 
 cp /etc/mpd.conf /bigD/git/archcfg/etc/
 cp /etc/pacman.conf /bigD/git/archcfg/etc/
