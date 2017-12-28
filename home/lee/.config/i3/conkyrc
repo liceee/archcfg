@@ -24,7 +24,7 @@ conky.text = [[
     	# Network
     	{"full_text": "<span background='\#2C594F99'>   ${fs_used_perc /bigD/}%  </span><span background='\#2C594F99' foreground='\#35545B99'>\ue0ba</span>", "markup": "pango", "separator":false, "separator_block_width": 0, "color" : "\#FFFFFF99"},
      	# Date:
-	{"full_text": "<span background='\#35545B99'>   ${battery_bar 1,10 BAT1} </span><span background='\#35545B99' foreground='\#BD58A455'>\ue0be</span>","separator": false, "separator_block_width": 0, "markup": "pango", "color" : "\#FFFFFF99"},
+	{"full_text": "<span background='\#35545B99'>   ${battery_bar 1,10 BAT1} ${exec cat /sys/class/power_supply/BAT1/capacity}%</span><span background='\#35545B99' foreground='\#BD58A455'>\ue0be</span>","separator": false, "separator_block_width": 0, "markup": "pango", "color" : "\#FFFFFF99"},
 	# Time:
     	{"full_text": "<span background='\#BD58A455'>  ${time %Y/%m/%d 星期%a} </span><span background='\#BD58A455' foreground='\#002D4099'>\ue0be</span>","separator":false, "separator_block_width":0, "markup": "pango" , "color" : "\#FFFFFF"},
 	{"full_text": "<span background='\#002D4099'><span background='\#002D4099' foreground='\#FFA64477'>‧.${exec bash ~/.config/i3/time-left.sh} .</span>${exec date +%H |sed -e 's/^0//' -e 's/ 0/ /g'} : ${exec date +%M|sed -e 's/^0//' -e 's/ 0/ /g'}<span background='\#002D4099' foreground='\#FFA64477'>.</span></span><span background='\#002D4099' foreground='\#FFA64477'>${exec stars-i3}${exec dot-i3} </span><span foreground='\#002D4099'>\ue0bc</span>", "markup": "pango", "separator": false, "separator_block_width": 0, "color" : "\#FFFFFF"}

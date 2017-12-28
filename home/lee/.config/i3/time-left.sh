@@ -50,7 +50,6 @@ fi
 if [ $A == 16 ]; then
     echo "🐒"
 fi
-
 if [ $A == 17 ]; then
     echo "🐔"
 fi
@@ -74,7 +73,6 @@ if [ $A == 23 ]; then
 fi
 if [ $A == 0 ]; then
     echo "🐭"
-    wallpaper&
 fi
 
 exit

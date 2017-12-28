@@ -86,7 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval $(thefuck --alias)
-eval $(nohup ~/.config/i3/wallpaper.sh >/dev/null 2>&1)
 alias wallpaper=" ~/.config/i3/wallpaper.sh"
 alias em="emacs"
 xset s off
@@ -94,5 +93,4 @@ xset s noblank
 
 unset ftp_proxy
 unset http_proxy
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:~/.gem/ruby/2.4.0/bin
 #exec --no-startup-id "feh --bg-scale /bigD/down/bg.jpg"

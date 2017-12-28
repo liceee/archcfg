@@ -17,6 +17,7 @@ if [ ! -d "/bigD/git/archcfg/bin/" ]; then
 fi
 
 cp /etc/mpd.conf /bigD/git/archcfg/etc/
+cp /etc/pacman.conf /bigD/git/archcfg/etc/
 cp /home/lee/.config/i3 /bigD/git/archcfg/home/lee/.config/ -r
 cp /home/lee/.config/fcitx /bigD/git/archcfg/home/lee/.config/ -r
 cp /home/lee/.config/tilda /bigD/git/archcfg/home/lee/.config/ -r
@@ -24,6 +25,7 @@ cp /home/lee/.xinitrc /bigD/git/archcfg/home/lee/
 cp /home/lee/.Xresources /bigD/git/archcfg/home/lee/
 cp /home/lee/.zshrc /bigD/git/archcfg/home/lee/
 cp /home/lee/.emacs /bigD/git/archcfg/home/lee/
+cp /home/lee/.zsh_history /bigD/git/archcfg/home/lee/
 cp /home/lee/.bashrc /bigD/git/archcfg/home/lee/
 cp /bin/afp /bigD/git/archcfg/usr/bin/
 cp /bin/stars-i3 /bigD/git/archcfg/usr/bin/
