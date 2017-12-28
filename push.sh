@@ -80,7 +80,7 @@ fi
 	fi
     fi
     echo "$ tree -a home/lee/.config/i3"
-    tree -a /bigD/git/archcfg/home/lee/.config/i3
+    tree  /bigD/git/archcfg/
     echo ---------------------------
     echo "$ du -h -d1 /bigD/git/archcfg"
     du -h -d1 /bigD/git/archcfg
